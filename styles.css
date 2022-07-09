@@ -55,7 +55,7 @@ body {
   position: absolute;
   width: 25px;
   height: 25px;
-  background-image: url(/assets/img/cursor.svg);
+  background-image: url(./assets/img/cursor.svg);
   background-repeat: no-repeat;
   transition: transform 0.3s ease;
   z-index: -1;
@@ -471,16 +471,16 @@ body {
   padding: 0;
 }
 .main .portfolio .portfolio_list .portfolio_cards[project="H&G"] {
-  background-image: url(/assets/img/project_H&G.PNG);
+  background-image: url(./assets/img/project_H&G.PNG);
 }
 .main .portfolio .portfolio_list .portfolio_cards[project=portfolio1] {
-  background-image: url(/assets/img/portfolio1.jpg);
+  background-image: url(./assets/img/portfolio1.jpg);
 }
 .main .portfolio .portfolio_list .portfolio_cards[project=portfolio2] {
-  background-image: url(/assets/img/portfolio2.jpg);
+  background-image: url(./assets/img/portfolio2.jpg);
 }
 .main .portfolio .portfolio_list .portfolio_cards[project=portfolio3] {
-  background-image: url(/assets/img/portfolio3.jpg);
+  background-image: url(./assets/img/portfolio3.jpg);
 }
 .main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content {
   border: none;
