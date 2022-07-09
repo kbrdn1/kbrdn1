@@ -14,8 +14,17 @@
     url("./assets/fonts/6a17929c7360288d1242981da7712dc3.svg#Torus Notched Regular") format("svg");
   /* iOS 4.1- */
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap");
+
+@font-face {
+  font-family: Poppins;
+  src: url("./assets/fonts/Poppins-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url("./assets/fonts/Nunito-Regular.ttf");
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /*========== INIT ==========*/
 html {
