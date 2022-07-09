@@ -1,7 +1,18 @@
 /*========== FONTS ==========*/
 @font-face {
-  font-family: Torus-Notched;
-  src: url("./assets/fonts/Torus Notched Regular.ttf");
+  font-family: "Torus Notched";
+  src: url("./assets/fonts/6a17929c7360288d1242981da7712dc3.eot");
+  /* IE9*/
+  src: url("./assets/fonts/6a17929c7360288d1242981da7712dc3.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("./assets/fonts/6a17929c7360288d1242981da7712dc3.woff2") format("woff2"),
+    /* chrome、firefox */
+    url("./assets/fonts/6a17929c7360288d1242981da7712dc3.woff") format("woff"),
+    /* chrome、firefox */
+    url("./assets/fonts/6a17929c7360288d1242981da7712dc3.ttf") format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("./assets/fonts/6a17929c7360288d1242981da7712dc3.svg#Torus Notched Regular") format("svg");
+  /* iOS 4.1- */
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap");
@@ -18,7 +29,7 @@ html {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: Torus-Notched;
+  font-family: Torus Notched;
   scroll-behavior: smooth;
   z-index: 3;
 }
