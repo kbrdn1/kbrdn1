@@ -1,4 +1,8 @@
 /*========== FONTS ==========*/
+@font-face {
+  font-family: Torus-Notched;
+  src: url("./assets/fonts/Torus Notched Regular.ttf");
+}
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -14,7 +18,7 @@ html {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: Torus Notched;
+  font-family: Torus-Notched;
   scroll-behavior: smooth;
   z-index: 3;
 }
