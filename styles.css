@@ -63,7 +63,7 @@ body {
   top: 0;
   width: 50%;
   background-color: #0c0c0c;
-  transition: transform 5s ease-in-out;
+  transition: transform 10s ease-in-out;
   z-index: 1000;
   border-right: 1px solid #0099ff;
 }
@@ -74,7 +74,7 @@ body {
   left: 50%;
   width: 50%;
   background-color: #0c0c0c;
-  transition: transform 5s ease-in-out;
+  transition: transform 10s ease-in-out;
   z-index: 1000;
   border-left: 1px solid #0099ff;
 }
@@ -285,6 +285,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   max-width: 13rem;
+  z-index: 2000;
 }
 .home .home_content .home_text {
   position: absolute;
