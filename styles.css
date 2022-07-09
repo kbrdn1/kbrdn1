@@ -422,7 +422,7 @@ body {
 }
 .main .parcours .xp-job .xp-job_content .xp-job_experiences .xp-job_list .xp-job_cards .xp-job_date {
   color: rgba(0, 153, 255, 0.8);
-  font-family: Nunito;
+  font-family: Roboto, Nunito;
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
@@ -433,7 +433,7 @@ body {
   font-size: 1.2rem;
 }
 .main .parcours .xp-job .xp-job_content .xp-job_experiences .xp-job_list .xp-job_cards .xp-job_subname {
-  font-family: Nunito;
+  font-family: Roboto, Nunito;
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -508,7 +508,7 @@ body {
   background-image: url(./assets/img/portfolio2.jpg);
 }
 .main .portfolio .portfolio_list .portfolio_cards[project=portfolio3] {
-  background-image: url(./assets/img/portfolio3.jpg);
+  background-image: url(./assets/img/HGimg.PNG);
 }
 .main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content {
   border: none;
@@ -625,7 +625,8 @@ body {
   top: 1rem;
   right: 1rem;
   color: white;
-  font-size: 1.3rem;
+  mix-blend-mode:difference;
+  font-size: 2rem;
 }
 .portfolio_modal .modal .modal_bg {
   width: 100%;
