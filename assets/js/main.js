@@ -202,6 +202,11 @@ $(document).ready(function (event) {
       $(".nav_list").css("transform", "translateY(-3rem)");
       $(".nav_logo").css("transform", "translateY(-.5rem)");
       $(".hamb").css("transform", "translateY(-.5rem)");
+
+      $(".hamb .bar3").css("opacity", 1);
+      $(".hamb .bar2").css("transform", "rotate(0)");
+      $(".hamb .bar1").css("top", "0");
+      $(".hamb .bar1").css("transform", "rotate(0)");
     }
   });
 });
