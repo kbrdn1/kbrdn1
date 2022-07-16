@@ -285,7 +285,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   max-width: 13rem;
-  z-index: 2000;
+  z-index: 3;
 }
 .home .home_content .home_text {
   position: absolute;
