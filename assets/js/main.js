@@ -4,6 +4,7 @@ var lastScrolled = 0;
 var lastPosX = 0;
 $(document).ready(function (event) {
   var height = $(document).height();
+  var width = $(document).width();
 
   $(".curtain1").css("height", height + "px");
   $(".curtain2").css("height", height + "px");
@@ -161,52 +162,56 @@ $(document).ready(function (event) {
   });
 
   $(".hamb").click(function (e) {
-    var element = $(this).attr("state");
+    if (width < 1024) {
+      var element = $(this).attr("state");
 
-    if (element == "close") {
-      $(this).attr("state", "open");
-      $(".nav_list").css("display", "flex");
-      $(".nav_list").css("opacity", 1);
-      $(".nav_list").css("transform", "translateY(0)");
-      $(".nav_logo").css("transform", "translateY(.5rem)");
-      $(this).css("transform", "translateY(.5rem)")
-      $(".nav_items").css("transform", "translateY(1rem)");
-      
-      $(".hamb .bar3").css("opacity", 0);
-      $(".hamb .bar2").css("transform", "rotate(45deg)");
-      $(".hamb .bar1").css("top", "50%");
-      $(".hamb .bar1").css("transform", "rotate(-45deg)");
-    }
-    if (element == "open") {
-      $(this).attr("state", "close");
-      $(".nav_list").css("display", "none");
-      $(".nav_list").css("opacity", 0);
-      $(".nav_list").css("transform", "translateY(-3rem)");
-      $(".nav_logo").css("transform", "translateY(-.5rem)");
-      $(this).css("transform", "translateY(-.5rem)");
+      if (element == "close") {
+        $(this).attr("state", "open");
+        $(".nav_list").css("display", "flex");
+        $(".nav_list").css("opacity", 1);
+        $(".nav_list").css("transform", "translateY(0)");
+        $(".nav_logo").css("transform", "translateY(.5rem)");
+        $(this).css("transform", "translateY(.5rem)");
+        $(".nav_items").css("transform", "translateY(1rem)");
 
-      $(".hamb .bar3").css("opacity", 1);
-      $(".hamb .bar2").css("transform", "rotate(0)");
-      $(".hamb .bar1").css("top", "0");
-      $(".hamb .bar1").css("transform", "rotate(0)");
+        $(".hamb .bar3").css("opacity", 0);
+        $(".hamb .bar2").css("transform", "rotate(45deg)");
+        $(".hamb .bar1").css("top", "50%");
+        $(".hamb .bar1").css("transform", "rotate(-45deg)");
+      }
+      if (element == "open") {
+        $(this).attr("state", "close");
+        $(".nav_list").css("display", "none");
+        $(".nav_list").css("opacity", 0);
+        $(".nav_list").css("transform", "translateY(-3rem)");
+        $(".nav_logo").css("transform", "translateY(-.5rem)");
+        $(this).css("transform", "translateY(-.5rem)");
+
+        $(".hamb .bar3").css("opacity", 1);
+        $(".hamb .bar2").css("transform", "rotate(0)");
+        $(".hamb .bar1").css("top", "0");
+        $(".hamb .bar1").css("transform", "rotate(0)");
+      }
     }
   });
 
-  $(".nav_links").click(function (e) { 
-    var element = $(".hamb").attr("state");
-    
-    if (element == "open") {
-      $(".hamb").attr("state", "close");
-      $(".nav_list").css("display", "none");
-      $(".nav_list").css("opacity", 0);
-      $(".nav_list").css("transform", "translateY(-3rem)");
-      $(".nav_logo").css("transform", "translateY(-.5rem)");
-      $(".hamb").css("transform", "translateY(-.5rem)");
+  $(".nav_links").click(function (e) {
+    if (width < 1024) {
+      var element = $(".hamb").attr("state");
 
-      $(".hamb .bar3").css("opacity", 1);
-      $(".hamb .bar2").css("transform", "rotate(0)");
-      $(".hamb .bar1").css("top", "0");
-      $(".hamb .bar1").css("transform", "rotate(0)");
+      if (element == "open") {
+        $(".hamb").attr("state", "close");
+        $(".nav_list").css("display", "none");
+        $(".nav_list").css("opacity", 0);
+        $(".nav_list").css("transform", "translateY(-3rem)");
+        $(".nav_logo").css("transform", "translateY(-.5rem)");
+        $(".hamb").css("transform", "translateY(-.5rem)");
+
+        $(".hamb .bar3").css("opacity", 1);
+        $(".hamb .bar2").css("transform", "rotate(0)");
+        $(".hamb .bar1").css("top", "0");
+        $(".hamb .bar1").css("transform", "rotate(0)");
+      }
     }
   });
 });

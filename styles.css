@@ -110,6 +110,7 @@ body {
     height: 10vh;
     font-size: 1.1rem;
     z-index: 4;
+    transition: all .3s;
 }
 .nav .nav_logo {
     transition: all 0.3s;
@@ -716,6 +717,7 @@ body {
         transform: translateY(-3rem);
         opacity: 0;
         flex-direction: column;
+        transition: all .3s;
     }
     .nav .nav_list .nav_items {
         margin: 0.7rem auto;
