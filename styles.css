@@ -231,6 +231,7 @@ body {
     bottom: 3rem;
 }
 .nav2 .nav_info .nav_info-mail {
+    color: white;
     text-decoration: underline;
 }
 .nav2 .nav_info .nav_info-mail:hover {
