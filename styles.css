@@ -512,6 +512,9 @@ body {
 .main .portfolio .portfolio_list .portfolio_cards[project=portfolio3] {
     background-image: url(./assets/img/HGimg.PNG);
 }
+.main .portfolio .portfolio_list .portfolio_cards[project=reactWorld] {
+    background-image: url(./assets/img/reactworld.jpg);
+}
 .main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content {
     border: none;
     width: 100%;
