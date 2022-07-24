@@ -44,7 +44,7 @@ html {
     list-style: none;
     font-family: Torus Notched;
     scroll-behavior: smooth;
-    z-index: 3;
+    z-index: 999999;
 }
 
 body {
