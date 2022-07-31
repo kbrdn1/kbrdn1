@@ -516,6 +516,10 @@ body {
 .main .portfolio .portfolio_list .portfolio_cards[project=reactWorld] {
     background-image: url(./assets/img/reactworld.jpg);
 }
+
+.main .portfolio .portfolio_list .portfolio_cards[project=MyHackount] {
+    background-image: url(./assets/img/MyHackount.png);
+}
 .main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content {
     border: none;
     width: 100%;
