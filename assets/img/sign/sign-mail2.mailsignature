@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kylian Bardini Sign Mail</title>
-</head>
+Content-Transfer-Encoding: 7bit
+Content-type: text/html;
+charset=us-asscii
+Messase-Id;<1E3987F5-F6F9-3A46-7327-84E28FC7648>
+Mime-Version: 1.0 (Mac Os X Mail 14.0 \(3654.120.0.1.13\))
 <style>
     .nav_logo_links:hover .nav_logo-init {
         transform: translateY(-2.5rem);
@@ -72,5 +68,3 @@
         </div>
     </div>
 </body>
-
-</html>
