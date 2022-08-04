@@ -1,33 +1,33 @@
 /*========== FONTS ==========*/
 @font-face {
     font-family: "Torus Notched";
-    src: url("./assets/fonts/6a17929c7360288d1242981da7712dc3.eot");
+    src: url("../fonts/6a17929c7360288d1242981da7712dc3.eot");
     /* IE9*/
-    src: url("./assets/fonts/6a17929c7360288d1242981da7712dc3.eot?#iefix") format("embedded-opentype"),
+    src: url("../fonts/6a17929c7360288d1242981da7712dc3.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */
-    url("./assets/fonts/6a17929c7360288d1242981da7712dc3.woff2") format("woff2"),
+    url("../fonts/6a17929c7360288d1242981da7712dc3.woff2") format("woff2"),
     /* chrome、firefox */
-    url("./assets/fonts/6a17929c7360288d1242981da7712dc3.woff") format("woff"),
+    url("../fonts/6a17929c7360288d1242981da7712dc3.woff") format("woff"),
     /* chrome、firefox */
-    url("./assets/fonts/6a17929c7360288d1242981da7712dc3.ttf") format("truetype"),
+    url("../fonts/6a17929c7360288d1242981da7712dc3.ttf") format("truetype"),
     /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("./assets/fonts/6a17929c7360288d1242981da7712dc3.svg#Torus Notched Regular") format("svg");
+    url("../fonts/6a17929c7360288d1242981da7712dc3.svg#Torus Notched Regular") format("svg");
     /* iOS 4.1- */
 }
 
 @font-face {
     font-family: Poppins;
-    src: url("./assets/fonts/Poppins-ExtraLight.ttf");
+    src: url("../fonts/Poppins-ExtraLight.ttf");
 }
 
 @font-face {
     font-family: Nunito;
-    src: url("./assets/fonts/Nunito-Regular.ttf");
+    src: url("../fonts/Nunito-Regular.ttf");
 }
 
 @font-face {
     font-family: Roboto;
-    src: url("./assets/fonts/Roboto-Regular.ttf");
+    src: url("../fonts/Roboto-Regular.ttf");
 }
 
 /*========== INIT ==========*/
@@ -83,7 +83,7 @@ body {
     position: absolute;
     width: 25px;
     height: 25px;
-    background-image: url(./assets/img/cursor.svg);
+    background-image: url(../img/cursor.svg);
     background-repeat: no-repeat;
     transition: transform 0.3s ease;
     z-index: -1;
@@ -502,23 +502,23 @@ body {
     padding: 0;
 }
 .main .portfolio .portfolio_list .portfolio_cards[project="H&G"] {
-    background-image: url(./assets/img/project_H&G.PNG);
+    background-image: url(../img/project_H&G.PNG);
 }
 .main .portfolio .portfolio_list .portfolio_cards[project=portfolio1] {
-    background-image: url(./assets/img/portfolio1.jpg);
+    background-image: url(../img/portfolio1.jpg);
 }
 .main .portfolio .portfolio_list .portfolio_cards[project=portfolio2] {
-    background-image: url(./assets/img/portfolio2.jpg);
+    background-image: url(../img/portfolio2.jpg);
 }
 .main .portfolio .portfolio_list .portfolio_cards[project=portfolio3] {
-    background-image: url(./assets/img/HGimg.PNG);
+    background-image: url(../img/HGimg.PNG);
 }
 .main .portfolio .portfolio_list .portfolio_cards[project=reactWorld] {
-    background-image: url(./assets/img/reactworld.jpg);
+    background-image: url(../img/reactworld.jpg);
 }
 
 .main .portfolio .portfolio_list .portfolio_cards[project=MyHackount] {
-    background-image: url(./assets/img/MyHackount.png);
+    background-image: url(../img/MyHackount.png);
 }
 .main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content {
     border: none;
