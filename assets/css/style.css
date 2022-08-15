@@ -231,6 +231,7 @@ body {
   position: absolute;
   bottom: 3rem;
   right: -1rem;
+  transition: transform 0.3s ease;
 }
 .nav2 .nav_social .nav_social_content {
   display: flex;
@@ -333,7 +334,7 @@ body {
 .container {
   padding: 2rem;
   border: 1px solid rgba(0, 153, 255, 0.2);
-  transition: all 0.3s;
+  transition: all 0.8s;
 }
 .container:hover .services_icon {
   transform: translateY(-0.5rem);
@@ -874,6 +875,9 @@ body {
   }
   .nav2 .nav_info {
     display: none;
+    left: -88vw;
+    bottom: 2rem;
+    color: #0099ff;
   }
 
   .nav_social {
@@ -999,7 +1003,7 @@ body {
   }
   .portfolio_modal .modal .modal_x {
     transform: translateX(0);
-    right: 0.5rem;
+    right: 0;
   }
   .portfolio_modal .modal .modal_content a .btn {
     transform: skew(1.5deg);

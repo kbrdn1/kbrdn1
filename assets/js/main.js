@@ -204,6 +204,8 @@ $(document).ready(function (event) {
         $(".nav_logo").css("transform", "translateY(.5rem)");
         $(this).css("transform", "translateY(.5rem)");
         $(".nav_items").css("transform", "translateY(1rem)");
+        $(".nav_social").css("transform", "translateY(-.5rem)");
+        $(".nav_info").css("display", "block")
 
         $(".hamb .bar3").css("opacity", 0);
         $(".hamb .bar2").css("transform", "rotate(45deg)");
@@ -217,6 +219,8 @@ $(document).ready(function (event) {
         $(".nav_list").css("transform", "translateY(-3rem)");
         $(".nav_logo").css("transform", "translateY(-.5rem)");
         $(this).css("transform", "translateY(-.5rem)");
+        $(".nav_social").css("transform", "translateY(.5rem)");
+        $(".nav_info").css("display", "none");
 
         $(".hamb .bar3").css("opacity", 1);
         $(".hamb .bar2").css("transform", "rotate(0)");

@@ -278,6 +278,7 @@ body {
     position: absolute;
     bottom: 3rem;
     right: -1rem;
+    transition: transform .3s ease;
 
     .nav_social_content {
       display: flex;
@@ -374,7 +375,6 @@ body {
   transition: color 1s ease-out;
   overflow: hidden;
 
-
   &:hover {
     color: $black;
     font-weight: 600;
@@ -395,7 +395,7 @@ body {
 .container {
   padding: 2rem;
   border: 1px solid $primary-color-darken;
-  transition: all .3s;
+  transition: all 0.8s;
 
   &:hover {
     .services_icon {
@@ -582,7 +582,7 @@ body {
               font-family: Poppins;
               font-weight: 300;
               font-size: 1.2rem;
-              transition: all .3s;
+              transition: all 0.3s;
             }
 
             .xp-job_subname {
@@ -702,17 +702,17 @@ body {
         overflow: hidden;
 
         &::before {
-            content: "Voir";
-            position: absolute;
-            bottom: -1.8rem;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            color: transparent;
-            font-size: 1.2rem;
-            z-index: 5;
-            transition: all .3s ease-in-out;
-            transition-delay: .5s;
+          content: "Voir";
+          position: absolute;
+          bottom: -1.8rem;
+          left: 0;
+          width: 100%;
+          text-align: center;
+          color: transparent;
+          font-size: 1.2rem;
+          z-index: 5;
+          transition: all 0.3s ease-in-out;
+          transition-delay: 0.5s;
         }
 
         &:hover {
@@ -721,7 +721,7 @@ body {
           &::before {
             color: #fff;
             transform: translateY(-1.8rem);
-            padding: .3rem 0;
+            padding: 0.3rem 0;
             background-color: rgb(74, 255, 74);
           }
         }
@@ -765,8 +765,8 @@ body {
             }
 
             .portfolio_more {
-                opacity: 1;
-                transform: translateX(-3rem);
+              opacity: 1;
+              transform: translateX(-3rem);
             }
           }
 
@@ -778,10 +778,10 @@ body {
             font-size: 1.2rem;
             opacity: 0;
             transition: all 0.5s;
-            transition-delay: .5s;
+            transition-delay: 0.5s;
             color: #fff;
             background-color: rgb(74, 255, 74);
-            padding: .3rem 0;
+            padding: 0.3rem 0;
             text-align: center;
           }
 
@@ -916,8 +916,8 @@ body {
       color: white;
       font-size: 2rem;
       background-color: $primary-color-op;
-      padding: .3rem .7rem;
-      transition: all .5s ease;
+      padding: 0.3rem 0.7rem;
+      transition: all 0.5s ease;
       width: 4rem;
       text-align: center;
 
@@ -925,7 +925,6 @@ body {
         background-color: rgba(255, 0, 0, 0.8);
         width: 8rem;
         font-size: 2.2rem;
-        
       }
     }
 
@@ -1037,6 +1036,9 @@ body {
 
     .nav_info {
       display: none;
+      left: -88vw;
+      bottom: 2rem;
+      color: $primary-color;
     }
   }
 
@@ -1200,7 +1202,7 @@ body {
     .modal {
       .modal_x {
         transform: translateX(0);
-        right: .5rem;
+        right: 0;
       }
 
       .modal_content a .btn {
