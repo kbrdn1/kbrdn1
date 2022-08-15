@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bonjour, je suis Kylian Bardini, Développeur Frontend/Backend Junior et UX/UI Designer basé à Longwy.">
+    <meta name="description"
+        content="Bonjour, je suis Kylian Bardini, Développeur Frontend/Backend Junior et UX/UI Designer basé à Longwy.">
     <link rel="shortcut icon" href="./assets/img/Logo_K.svg" type="image/x-icon">
 
     <!--==================== FONT AWESOME ====================-->
@@ -66,7 +67,7 @@
             </li>
 
             <li class="nav_items">
-                <a href="#contact" class="nav_links">
+                <a href="#contact" class="nav_links nav_contact">
                     <div class="nav_links-init">Contact</div>
                     <div class="nav_links-plus">Contact</div>
                 </a>
@@ -112,44 +113,67 @@
         </div>
     </section>
 
+    <div class="fixed-popup" >
+        <a href="#contact">Contactez-moi</a>
+        <img src="./assets/img/mns_logo.png" alt="mns-logo">
+    </div>
+
     <main class="main">
         <section class="parcours" id="parcours">
             <div class="about">
                 <h2 class="about_title title">A propos</h2>
 
-                <div class="about_content container">
-                    <div class="about_portrait">
-                        <img src="./assets/img/Moi.png" alt="me" class="about_img">
-                    </div>
-
-                    <div class="about_text">
-                        <p class="about_description">
-                            Je suis passionné par la conception informatique. Mon amour du
-                            développement et du graphisme me permet d'être polyvalent et adaptable aux tâches qui me
-                            sont confiées. Mon objectif est d'améliorer le Web en concevant de superbes expériences.
-                        </p>
-
-                        <div class="about_infos">
-                            <div class="about_items">
-                                <span>Residence: </span>France
-                            </div>
-
-                            <div class="about_items">
-                                <span>Adresse: </span>Rouvrois/Othain - 55230
-                            </div>
-
-                            <div class="about_items">
-                                <span>E-mail: </span>contact-dev@kylian-bardini.fr
-                            </div>
+                <div class="about_content">
+                    <div class="about_me container">
+                        <div class="about_portrait">
+                            <img src="./assets/img/Moi.png" alt="me" class="about_img">
                         </div>
 
-                        <div class="about_cv">
-                            <a href="./assets/cv/CV_BARDINI_KYLIAN.pdf" target="_blank">
-                                <div class="btn" btn="cv">Télécharger mon CV
-                                    <div class="before"></div>
+                        <div class="about_text">
+                            <p class="about_description">
+                                Je suis passionné par la conception informatique. Mon amour du
+                                développement et du graphisme me permet d'être polyvalent et adaptable aux tâches qui me
+                                sont confiées. Mon objectif est d'améliorer le Web en concevant de superbes expériences.
+                            </p>
+
+                            <div class="about_infos">
+                                <div class="about_items">
+                                    <span>Residence: </span>France
                                 </div>
 
-                            </a>
+                                <div class="about_items">
+                                    <span>Adresse: </span>Rouvrois/Othain - 55230
+                                </div>
+
+                                <div class="about_items">
+                                    <span>E-mail: </span>contact-dev@kylian-bardini.fr
+                                </div>
+                            </div>
+
+                            <div class="about_cv">
+                                <a href="./assets/cv/CV_BARDINI_KYLIAN.pdf" target="_blank">
+                                    <div class="btn" btn="cv">Télécharger mon CV
+                                        <div class="before"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about_mns container">
+                        <a href="https://www.metz-numeric-school.fr/fr" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/img/mns_logo.png" alt="mns-logo" class="mns_logo">
+                        </a>
+                        <div class="mns_text">
+                            <p>Actuellement à la recherche d'une&nbsp;<span>alternance</span>&nbsp;pour
+                                un&nbsp;<span>BAC+3
+                                    Bachelor Développeur Fullstack</span>&nbsp;sur&nbsp;<span>1 an</span>.</p>
+                            <div class="mns_contact">
+                                <a href="#contact">
+                                    <div class="btn" btn="mnscontact">Me contacter
+                                        <div class="before"></div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -186,32 +210,6 @@
             <div class="xp-job">
                 <div class="xp-job_content">
                     <div class="xp-job_experiences">
-                        <h3 class="xp-job_subtitle subtitle">Expériences</h3>
-
-                        <div class="xp-job_list">
-                            <div class="xp-job_cards container">
-                                <p class="xp-job_date">Octobre 2020 - Octobre 2021</p>
-
-                                <h4 class="xp-job_name">EUROSTAMP</h4>
-
-                                <p class="xp-job_subname">Opérateur de production</p>
-
-                                <p class="xp-job_description">Villers-la-Montagne</p>
-                            </div>
-
-                            <div class="xp-job_cards container">
-                                <p class="xp-job_date">Mars 2018</p>
-
-                                <h4 class="xp-job_name">Mairie</h4>
-
-                                <p class="xp-job_subname">Serveur de restaurant</p>
-
-                                <p class="xp-job_description">Longuyon</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="xp-job_experiences">
                         <h3 class="xp-job_subtitle subtitle">Diplômes</h3>
 
                         <div class="xp-job_list">
@@ -241,6 +239,32 @@
                                 <h4 class="xp-job_name">Collège Paul VERLAINE</h4>
 
                                 <p class="xp-job_subname">Brevet des collèges</p>
+
+                                <p class="xp-job_description">Longuyon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="xp-job_experiences">
+                        <h3 class="xp-job_subtitle subtitle">Expériences</h3>
+
+                        <div class="xp-job_list">
+                            <div class="xp-job_cards container">
+                                <p class="xp-job_date">Octobre 2020 - Octobre 2021</p>
+
+                                <h4 class="xp-job_name">EUROSTAMP</h4>
+
+                                <p class="xp-job_subname">Opérateur de production</p>
+
+                                <p class="xp-job_description">Villers-la-Montagne</p>
+                            </div>
+
+                            <div class="xp-job_cards container">
+                                <p class="xp-job_date">Mars 2018</p>
+
+                                <h4 class="xp-job_name">Mairie</h4>
+
+                                <p class="xp-job_subname">Serveur de restaurant</p>
 
                                 <p class="xp-job_description">Longuyon</p>
                             </div>
@@ -439,13 +463,30 @@
                 method="POST">
                 <input name="name" type="text" class="contact_input" placeholder="Nom" required>
                 <input name="email" type="email" class="contact_input" placeholder="Email" required>
-                <textarea name="message" type="text" class="contact_input" placeholder="Message" cols="0"
-                    rows="3" required></textarea>
+                <textarea name="message" type="text" class="contact_input" placeholder="Message" cols="0" rows="3"
+                    required></textarea>
                 <input type="hidden" name="_next" value="https://kylian-bardini.fr">
                 <button type="submit" class="btn" btn="contact">Envoyer
                     <div class="before"></div>
                 </button>
             </form>
+
+            <div class="contact_mns container">
+                <a href="https://www.metz-numeric-school.fr/fr" rel="noopener noreferrer">
+                    <img src="./assets/img/mns_logo.png" alt="mns-logo" class="mns_logo">
+                </a>
+                <div class="mns_text">
+                    <p>Actuellement à la recherche d'une&nbsp;<span>alternance</span>&nbsp;pour un&nbsp;<span>BAC+3
+                            Bachelor Développeur Fullstack</span>&nbsp;sur&nbsp;<span>1 an</span>.</p>
+                    <div class="mns_about">
+                        <a href="#parcours">
+                            <div class="btn" btn="mnscontact"> A propos
+                                <div class="before"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
         </section>
     </main>
@@ -598,7 +639,8 @@
 
                 <div class="modal_title title">React World</div>
 
-                <div class="modal_description">Site contenant différentes information sur les pays du monde via une API</div>
+                <div class="modal_description">Site contenant différentes information sur les pays du monde via une API
+                </div>
 
                 <div class="modal_construct title">Construit avec:</div>
 

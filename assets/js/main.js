@@ -12,23 +12,29 @@ $(document).ready(function (event) {
 
   $(".curtain1").css("transform", "translateX(-500%)");
   $(".curtain2").css("transform", "translateX(500%)");
+  $(".home_logo").css("opacity", "1");
+  $(".home_logo").css("transform", "translate(-50%, 0)");
+  $(".home_text").css("opacity", "1");
+  $(".home_text").css("transform", "translateY(0)");
 
   $(document).scroll(function (e) {
     if (width < 1024) {
       let scrollDoc = $(document).scrollTop();
       if (scroll < scrollDoc) {
         $(
-          ".portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
+          ".contact_mns, .portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
         ).css("transform", "skew(2.5deg)");
+        $(".about_content").css("transform", "skew(1deg)");
       } else {
         $(
-          ".portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
+          ".contact_mns, .portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
         ).css("transform", "skew(-2.5deg)");
+        $(".about_content").css("transform", "skew(-1deg)");
       }
       scroll = scrollDoc;
       setTimeout(() => {
         $(
-          ".portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
+          ".contact_mns, .about_content, .portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
         ).removeAttr("style");
       }, 3200);
 
@@ -205,7 +211,7 @@ $(document).ready(function (event) {
         $(this).css("transform", "translateY(.5rem)");
         $(".nav_items").css("transform", "translateY(1rem)");
         $(".nav_social").css("transform", "translateY(-.5rem)");
-        $(".nav_info").css("display", "block")
+        $(".nav_info").css("display", "block");
 
         $(".hamb .bar3").css("opacity", 0);
         $(".hamb .bar2").css("transform", "rotate(45deg)");

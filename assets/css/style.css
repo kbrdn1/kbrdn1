@@ -187,7 +187,7 @@ body {
   margin: 2rem 0 2rem 2rem;
   padding-bottom: 0;
   overflow: hidden;
-  height: 1.5rem;
+  height: 1.75rem;
   transition: all 0.3s ease-out;
 }
 .nav .nav_list .nav_items .nav_links {
@@ -196,6 +196,7 @@ body {
 }
 .nav .nav_list .nav_items .nav_links .nav_links-init {
   color: #0099ff;
+  margin-bottom: 0.4rem;
   transition: all 0.4s ease-out;
 }
 .nav .nav_list .nav_items .nav_links .nav_links-plus {
@@ -203,7 +204,22 @@ body {
 }
 .nav .nav_list .nav_items .nav_links:hover .nav_links-init,
 .nav .nav_list .nav_items .nav_links:hover .nav_links-plus {
-  transform: translateY(-1.5rem);
+  transform: translateY(-1.8rem);
+}
+.nav .nav_list .nav_items .nav_contact {
+  text-align: center;
+}
+.nav .nav_list .nav_items .nav_contact .nav_links-init {
+  transform: skew(-7deg);
+  padding-inline: 0.7rem;
+  font-weight: 600;
+  color: #0c0c0c;
+  border: rgba(0, 153, 255, 0.8) solid 3px;
+  background-color: #0099ff;
+}
+.nav .nav_list .nav_items .nav_contact:hover .nav_links-init,
+.nav .nav_list .nav_items .nav_contact:hover .nav_links-plus {
+  transform: translateY(-2.1rem);
 }
 
 .nav2 {
@@ -275,9 +291,11 @@ body {
   position: absolute;
   top: 35%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 2rem);
   max-width: 13rem;
   z-index: 3;
+  opacity: 0;
+  transition: all 0.5s ease 1.5s;
 }
 .home .home_content .home_text {
   position: absolute;
@@ -285,11 +303,43 @@ body {
   bottom: 5rem;
   font-size: 1.2rem;
   font-family: Poppins;
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: all 0.5s ease 2.5s;
 }
 .home .home_content .home_text span {
   color: rgba(0, 153, 255, 0.8);
   font-weight: 800;
   font-size: 1.3rem;
+}
+
+.fixed-popup {
+  display: flex;
+  position: fixed;
+  top: 40%;
+  left: -2px;
+  transform: translateX(-8rem);
+  align-items: center;
+  z-index: 4;
+  transition: transform 0.4s ease-out;
+}
+.fixed-popup:hover {
+  transform: translateX(0);
+}
+.fixed-popup a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #ff5101ef;
+  padding: 1.4rem 0;
+  text-align: center;
+  width: 8rem;
+  transform: skew(3deg);
+}
+.fixed-popup img {
+  cursor: pointer;
+  width: 5.1rem;
+  transform: skew(3deg);
 }
 
 .title {
@@ -366,37 +416,105 @@ body {
 .main .parcours .about .about_content {
   display: flex;
   transform: skew(-1.5deg);
+  flex-direction: column;
+  transition: all 0.8s;
 }
-.main .parcours .about .about_content .about_portrait {
+.main .parcours .about .about_content .about_me {
+  display: flex;
+}
+.main .parcours .about .about_content .about_me .about_portrait {
   margin-right: 2rem;
 }
-.main .parcours .about .about_content .about_portrait .about_img {
+.main .parcours .about .about_content .about_me .about_portrait .about_img {
   max-height: 12rem;
   border: 5px solid rgba(0, 153, 255, 0.8);
 }
-.main .parcours .about .about_content .about_text {
+.main .parcours .about .about_content .about_me .about_text {
   font-size: 1.1rem;
 }
-.main .parcours .about .about_content .about_text .about_description {
+.main .parcours .about .about_content .about_me .about_text .about_description {
   font-family: Poppins;
   margin-bottom: 1rem;
 }
-.main .parcours .about .about_content .about_text .about_infos {
+.main .parcours .about .about_content .about_me .about_text .about_infos {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
-.main .parcours .about .about_content .about_text .about_infos .about_items {
+.main .parcours .about .about_content .about_me .about_text .about_infos .about_items {
   font-family: Poppins;
 }
-.main .parcours .about .about_content .about_text .about_infos .about_items span {
+.main .parcours .about .about_content .about_me .about_text .about_infos .about_items span {
   font-size: 1.2rem;
   color: rgba(0, 153, 255, 0.8);
 }
-.main .parcours .about .about_content .about_text .about_cv {
+.main .parcours .about .about_content .about_me .about_text .about_cv {
   width: max-content;
   margin-bottom: 1rem;
   transform: skew(-1deg);
+}
+.main .parcours .about .about_mns {
+  position: relative;
+  display: flex;
+  cursor: default;
+  background-color: #151936;
+  width: 100%;
+  font-size: 1.2rem;
+  align-items: center;
+  padding: 0.5rem;
+  border: none;
+  transition: transform 0.4s ease;
+}
+.main .parcours .about .about_mns::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ff5101ef;
+  transition: width 0.4s ease-out;
+}
+.main .parcours .about .about_mns:hover {
+  transform: translateY(0.5rem);
+}
+.main .parcours .about .about_mns:hover::before {
+  width: 5px;
+}
+.main .parcours .about .about_mns .mns_logo {
+  cursor: pointer;
+}
+.main .parcours .about .about_mns .mns_text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  cursor: unset;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  align-items: center;
+}
+.main .parcours .about .about_mns .mns_text p {
+  cursor: unset;
+}
+.main .parcours .about .about_mns .mns_text p span {
+  cursor: unset;
+  color: #ff5301;
+}
+.main .parcours .about .about_mns .mns_text .mns_contact {
+  margin-top: 1rem;
+}
+.main .parcours .about .about_mns .mns_text .mns_contact a .btn {
+  color: #ff5101ef;
+  border-color: #ff5101ef;
+}
+.main .parcours .about .about_mns .mns_text .mns_contact a .btn:hover {
+  color: #0c0c0c;
+}
+.main .parcours .about .about_mns .mns_text .mns_contact a .btn .before {
+  background-color: #ff5101ef;
 }
 .main .parcours .services {
   margin-top: 5rem;
@@ -534,6 +652,9 @@ body {
 .main .parcours .skills .skills_content .skills_list .skills_cards:hover .skills_name {
   transform: translateY(-0.5rem);
 }
+.main .parcours .skills .skills_content .skills_list .skills_cards:hover .skills_name {
+  letter-spacing: 1px;
+}
 .main .parcours .skills .skills_content .skills_list .skills_cards:hover::before {
   width: 100%;
 }
@@ -549,7 +670,7 @@ body {
 .main .parcours .skills .skills_content .skills_list .skills_cards .skills_name {
   font-family: Poppins;
   font-size: 1.1rem;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, letter-spacing 0.5s ease;
 }
 .main .parcours .lifestyle {
   margin-top: 5rem;
@@ -587,6 +708,7 @@ body {
   overflow: hidden;
 }
 .main .portfolio .portfolio_list .portfolio_cards::before {
+  cursor: pointer !important;
   content: "Voir";
   position: absolute;
   bottom: -1.8rem;
@@ -627,6 +749,7 @@ body {
   background-image: url(../img/MyHackount.png);
 }
 .main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content {
+  padding: 0.3rem 0;
   border: none;
   width: 100%;
   height: 100%;
@@ -643,6 +766,8 @@ body {
   transform: translateX(-3rem);
 }
 .main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content .portfolio_more {
+  cursor: pointer;
+  padding: 0.3rem 0;
   position: absolute;
   top: 1rem;
   right: -3rem;
@@ -657,6 +782,7 @@ body {
   text-align: center;
 }
 .main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content .portfolio_type {
+  cursor: pointer;
   position: absolute;
   top: 7rem;
   left: 50%;
@@ -666,6 +792,7 @@ body {
   transition: all 0.5s;
 }
 .main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content .portfolio_name {
+  cursor: pointer;
   position: absolute;
   top: 9rem;
   left: 50%;
@@ -674,7 +801,8 @@ body {
   transition: all 0.5s;
 }
 .main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content .before {
-  background-color: #0099ff;
+  cursor: pointer;
+  background-color: rgba(0, 153, 255, 0.975);
 }
 .main .contact {
   margin-top: 5rem;
@@ -721,6 +849,69 @@ body {
 .main .contact .contact_form button {
   background: transparent;
   font-size: 1rem;
+}
+.main .contact .contact_mns {
+  position: relative;
+  display: flex;
+  cursor: default;
+  background-color: #151936;
+  width: 100%;
+  font-size: 1.2rem;
+  align-items: center;
+  padding: 0.5rem;
+  border: none;
+  transition: transform 0.4s ease;
+}
+.main .contact .contact_mns::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ff5101ef;
+  transition: width 0.4s ease-out;
+}
+.main .contact .contact_mns:hover {
+  transform: translateY(0.5rem);
+}
+.main .contact .contact_mns:hover::before {
+  width: 5px;
+}
+.main .contact .contact_mns .mns_logo {
+  cursor: pointer;
+}
+.main .contact .contact_mns .mns_text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  cursor: unset;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  align-items: center;
+}
+.main .contact .contact_mns .mns_text p {
+  cursor: unset;
+}
+.main .contact .contact_mns .mns_text p span {
+  cursor: unset;
+  color: #ff5301;
+}
+.main .contact .contact_mns .mns_text .mns_about {
+  margin-top: 1rem;
+}
+.main .contact .contact_mns .mns_text .mns_about a .btn {
+  color: #ff5101ef;
+  border-color: #ff5101ef;
+}
+.main .contact .contact_mns .mns_text .mns_about a .btn:hover {
+  color: #0c0c0c;
+}
+.main .contact .contact_mns .mns_text .mns_about a .btn .before {
+  background-color: #ff5101ef;
 }
 
 .bg-modal {
@@ -879,6 +1070,9 @@ body {
     bottom: 2rem;
     color: #0099ff;
   }
+  .nav2 .nav_info .nav_info-mail {
+    text-decoration: 2px underline #0099ff;
+  }
 
   .nav_social {
     bottom: 1rem;
@@ -903,6 +1097,10 @@ body {
     font-size: 1.1rem;
   }
 
+  .fixed-popup {
+    top: 4rem;
+  }
+
   .main {
     width: 100%;
     padding: 2rem;
@@ -911,33 +1109,43 @@ body {
     flex-direction: column;
     transform: skew(0);
   }
-  .main .parcours .about .about_content .about_portrait {
+  .main .parcours .about .about_content .about_me {
+    flex-direction: column;
+  }
+  .main .parcours .about .about_content .about_me .about_portrait {
     display: flex;
     margin: 0;
   }
-  .main .parcours .about .about_content .about_portrait .about_img {
+  .main .parcours .about .about_content .about_me .about_portrait .about_img {
     margin: auto;
     max-height: 10rem;
   }
-  .main .parcours .about .about_content .about_text {
+  .main .parcours .about .about_content .about_me .about_text {
     font-size: 1rem;
   }
-  .main .parcours .about .about_content .about_text .about_description {
+  .main .parcours .about .about_content .about_me .about_text .about_description {
     font-family: Poppins;
     margin: 1rem 0;
     text-align: center;
   }
-  .main .parcours .about .about_content .about_text .about_infos {
+  .main .parcours .about .about_content .about_me .about_text .about_infos {
     flex-direction: column;
   }
-  .main .parcours .about .about_content .about_text .about_infos .about_items {
+  .main .parcours .about .about_content .about_me .about_text .about_infos .about_items {
     margin: 0.5rem 0;
   }
-  .main .parcours .about .about_content .about_text .about_cv {
+  .main .parcours .about .about_content .about_me .about_text .about_cv {
     transform: skew(-1.5deg);
   }
-  .main .parcours .about .about_content .about_cv {
+  .main .parcours .about .about_content .about_me .about_cv {
     margin: auto;
+  }
+  .main .parcours .about .about_mns {
+    transform: skew(0);
+    flex-direction: column;
+  }
+  .main .parcours .about .about_mns .mns_text {
+    padding: 0.5rem;
   }
   .main .parcours .services .services_content .services_cards {
     transform: skew(0);
@@ -994,6 +1202,13 @@ body {
   .main .contact .contact_form button {
     margin: auto;
     transform: skew(1.5deg);
+  }
+  .main .contact .contact_mns {
+    transform: skew(0);
+    flex-direction: column;
+  }
+  .main .contact .contact_mns .mns_text {
+    padding: 0.5rem;
   }
 
   .portfolio_modal {

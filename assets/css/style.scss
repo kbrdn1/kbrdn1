@@ -36,6 +36,9 @@ $primary-color-op: rgba(0, 153, 255, 0.8);
 $primary-color-darken: rgba(0, 153, 255, 0.2);
 $white-op: rgba(255, 255, 255, 0.8);
 $black: #0c0c0c;
+$mns-orange: #ff5301;
+$mns-orange-op: #ff5101ef;
+$mns-bg: #151936;
 
 html {
   overflow-x: hidden;
@@ -223,7 +226,7 @@ body {
       margin: 2rem 0 2rem 2rem;
       padding-bottom: 0;
       overflow: hidden;
-      height: 1.5rem;
+      height: 1.75rem;
       transition: all 0.3s ease-out;
 
       .nav_links {
@@ -232,6 +235,7 @@ body {
 
         .nav_links-init {
           color: $primary-color;
+          margin-bottom: 0.4rem;
           transition: all 0.4s ease-out;
         }
 
@@ -242,7 +246,27 @@ body {
         &:hover {
           .nav_links-init,
           .nav_links-plus {
-            transform: translateY(-1.5rem);
+            transform: translateY(-1.8rem);
+          }
+        }
+      }
+
+      .nav_contact {
+        text-align: center;
+
+        .nav_links-init {
+          transform: skew(-7deg);
+          padding-inline: 0.7rem;
+          font-weight: 600;
+          color: $black;
+          border: $primary-color-op solid 3px;
+          background-color: $primary-color;
+        }
+
+        &:hover {
+          .nav_links-init,
+          .nav_links-plus {
+            transform: translateY(-2.1rem);
           }
         }
       }
@@ -278,7 +302,7 @@ body {
     position: absolute;
     bottom: 3rem;
     right: -1rem;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
 
     .nav_social_content {
       display: flex;
@@ -330,9 +354,11 @@ body {
       position: absolute;
       top: 35%;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translate(-50%, 2rem);
       max-width: 13rem;
       z-index: 3;
+      opacity: 0;
+      transition: all 0.5s ease 1.5s;
     }
 
     .home_text {
@@ -341,6 +367,9 @@ body {
       bottom: 5rem;
       font-size: 1.2rem;
       font-family: Poppins;
+      opacity: 0;
+      transform: translateY(2rem);
+      transition: all 0.5s ease 2.5s;
 
       span {
         color: $primary-color-op;
@@ -349,6 +378,37 @@ body {
       }
     }
   }
+}
+
+.fixed-popup {
+    display: flex;
+    position: fixed;
+    top: 40%;
+    left: -2px;
+    transform: translateX(-8rem);
+    align-items: center;
+    z-index: 4;
+    transition: transform .4s ease-out;
+
+    &:hover {
+        transform: translateX(0);
+    }
+
+    a {text-decoration: none;
+    color: #fff;
+        cursor: pointer;
+        background-color: $mns-orange-op;
+        padding: 1.4rem 0;
+        text-align: center;
+        width: 8rem;
+        transform: skew(3deg);
+    }
+
+    img {
+        cursor: pointer;
+        width: 5.1rem;
+        transform: skew(3deg);
+    }
 }
 
 .title {
@@ -433,46 +493,127 @@ body {
   padding: 5rem 0;
 
   .parcours {
-    .about .about_content {
-      display: flex;
-      transform: skew(-1.5deg);
+    .about {
+      .about_content {
+        display: flex;
+        transform: skew(-1.5deg);
+        flex-direction: column;
+        transition: all 0.8s;
 
-      .about_portrait {
-        margin-right: 2rem;
-
-        .about_img {
-          max-height: 12rem;
-          border: 5px solid $primary-color-op;
-        }
-      }
-
-      .about_text {
-        font-size: 1.1rem;
-
-        .about_description {
-          font-family: Poppins;
-          margin-bottom: 1rem;
-        }
-
-        .about_infos {
+        .about_me {
           display: flex;
-          justify-content: space-between;
-          margin-bottom: 2rem;
 
-          .about_items {
-            font-family: Poppins;
+          .about_portrait {
+            margin-right: 2rem;
 
-            span {
-              font-size: 1.2rem;
-              color: $primary-color-op;
+            .about_img {
+              max-height: 12rem;
+              border: 5px solid $primary-color-op;
+            }
+          }
+
+          .about_text {
+            font-size: 1.1rem;
+
+            .about_description {
+              font-family: Poppins;
+              margin-bottom: 1rem;
+            }
+
+            .about_infos {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 2rem;
+
+              .about_items {
+                font-family: Poppins;
+
+                span {
+                  font-size: 1.2rem;
+                  color: $primary-color-op;
+                }
+              }
+            }
+
+            .about_cv {
+              width: max-content;
+              margin-bottom: 1rem;
+              transform: skew(-1deg);
             }
           }
         }
+      }
 
-        .about_cv {
-          width: max-content;
-          margin-bottom: 1rem;
-          transform: skew(-1deg);
+      .about_mns {
+        position: relative;
+        display: flex;
+        cursor: default;
+        background-color: #151936;
+        width: 100%;
+        font-size: 1.2rem;
+        align-items: center;
+        padding: 0.5rem;
+        border: none;
+        transition: transform 0.4s ease;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background-color: $mns-orange-op;
+          transition: width 0.4s ease-out;
+        }
+
+        &:hover {
+          transform: translateY(0.5rem);
+
+          &::before {
+            width: 5px;
+          }
+        }
+
+        .mns_logo {
+          cursor: pointer;
+        }
+
+        .mns_text {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          cursor: unset;
+          padding: 1rem;
+          padding-top: 1.5rem;
+          text-align: center;
+          text-decoration: none;
+          color: #fff;
+          align-items: center;
+
+          p {
+            cursor: unset;
+            span {
+              cursor: unset;
+              color: $mns-orange;
+            }
+          }
+
+          .mns_contact {
+            margin-top: 1rem;
+            a .btn {
+              color: $mns-orange-op;
+              border-color: $mns-orange-op;
+
+              &:hover {
+                color: $black;
+              }
+
+              .before {
+                background-color: $mns-orange-op;
+              }
+            }
+          }
         }
       }
     }
@@ -635,6 +776,10 @@ body {
                 transform: translateY(-0.5rem);
               }
 
+              .skills_name {
+                letter-spacing: 1px;
+              }
+
               &::before {
                 width: 100%;
               }
@@ -654,7 +799,7 @@ body {
             .skills_name {
               font-family: Poppins;
               font-size: 1.1rem;
-              transition: transform 0.4s ease;
+              transition: transform 0.4s ease, letter-spacing .5s ease;
             }
           }
         }
@@ -702,6 +847,7 @@ body {
         overflow: hidden;
 
         &::before {
+          cursor: pointer !important;
           content: "Voir";
           position: absolute;
           bottom: -1.8rem;
@@ -751,6 +897,7 @@ body {
         }
 
         .portfolio_cards_content {
+          padding: 0.3rem 0;
           border: none;
           width: 100%;
           height: 100%;
@@ -771,6 +918,8 @@ body {
           }
 
           .portfolio_more {
+            cursor: pointer;
+            padding: 0.3rem 0;
             position: absolute;
             top: 1rem;
             right: -3rem;
@@ -786,6 +935,7 @@ body {
           }
 
           .portfolio_type {
+            cursor: pointer;
             position: absolute;
             top: 7rem;
             left: 50%;
@@ -796,6 +946,7 @@ body {
           }
 
           .portfolio_name {
+            cursor: pointer;
             position: absolute;
             top: 9rem;
             left: 50%;
@@ -805,7 +956,8 @@ body {
           }
 
           .before {
-            background-color: $primary-color;
+            cursor: pointer;
+            background-color: rgba(0, 153, 255, 0.975);
           }
         }
       }
@@ -863,6 +1015,79 @@ body {
       button {
         background: transparent;
         font-size: 1rem;
+      }
+    }
+
+    .contact_mns {
+      position: relative;
+      display: flex;
+      cursor: default;
+      background-color: #151936;
+      width: 100%;
+      font-size: 1.2rem;
+      align-items: center;
+      padding: 0.5rem;
+      border: none;
+      transition: transform 0.4s ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: $mns-orange-op;
+        transition: width 0.4s ease-out;
+      }
+
+      &:hover {
+        transform: translateY(0.5rem);
+
+        &::before {
+          width: 5px;
+        }
+      }
+
+      .mns_logo {
+        cursor: pointer;
+      }
+
+      .mns_text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        cursor: unset;
+        padding: 1rem;
+        padding-top: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        align-items: center;
+
+        p {
+          cursor: unset;
+          span {
+            cursor: unset;
+            color: $mns-orange;
+          }
+        }
+
+        .mns_about {
+          margin-top: 1rem;
+          a .btn {
+            color: $mns-orange-op;
+            border-color: $mns-orange-op;
+
+            &:hover {
+              color: $black;
+            }
+
+            .before {
+              background-color: $mns-orange-op;
+            }
+          }
+        }
       }
     }
   }
@@ -1039,6 +1264,10 @@ body {
       left: -88vw;
       bottom: 2rem;
       color: $primary-color;
+
+      .nav_info-mail {
+        text-decoration: 2px underline $primary-color;
+      }
     }
   }
 
@@ -1073,49 +1302,67 @@ body {
     }
   }
 
+  .fixed-popup {
+    top: 4rem;
+  }
+
   .main {
     width: 100%;
     padding: 2rem;
 
     .parcours {
-      .about .about_content {
-        flex-direction: column;
-        transform: skew(0);
-
-        .about_portrait {
-          display: flex;
-          margin: 0;
-
-          .about_img {
-            margin: auto;
-            max-height: 10rem;
-          }
-        }
-
-        .about_text {
-          font-size: 1rem;
-
-          .about_description {
-            font-family: Poppins;
-            margin: 1rem 0;
-            text-align: center;
-          }
-
-          .about_infos {
+      .about {
+        .about_content {
+            flex-direction: column;
+            transform: skew(0);
+          .about_me {
             flex-direction: column;
 
-            .about_items {
-              margin: 0.5rem 0;
-            }
-          }
+            .about_portrait {
+              display: flex;
+              margin: 0;
 
-          .about_cv {
-            transform: skew(-1.5deg);
+              .about_img {
+                margin: auto;
+                max-height: 10rem;
+              }
+            }
+
+            .about_text {
+              font-size: 1rem;
+
+              .about_description {
+                font-family: Poppins;
+                margin: 1rem 0;
+                text-align: center;
+              }
+
+              .about_infos {
+                flex-direction: column;
+
+                .about_items {
+                  margin: 0.5rem 0;
+                }
+              }
+
+              .about_cv {
+                transform: skew(-1.5deg);
+              }
+            }
+
+            .about_cv {
+              margin: auto;
+            }
           }
         }
 
-        .about_cv {
-          margin: auto;
+        .about_mns {
+          transform: skew(0);
+          flex-direction: column;
+
+          .mns_text {
+            padding: 0.5rem;
+          }
         }
       }
 
@@ -1189,6 +1436,15 @@ body {
         button {
           margin: auto;
           transform: skew(1.5deg);
+        }
+      }
+
+      .contact_mns {
+        transform: skew(0);
+        flex-direction: column;
+
+        .mns_text {
+          padding: 0.5rem;
         }
       }
     }
