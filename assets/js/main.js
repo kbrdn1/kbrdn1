@@ -30,7 +30,7 @@ $(document).ready(function (event) {
         $(
           ".portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
         ).removeAttr("style");
-      }, 300);
+      }, 1000);
 
       return scroll;
     }
