@@ -151,6 +151,7 @@ $(document).ready(function (event) {
 
       thisElement = "[modal = '" + element + "']";
       $(thisElement).css("display", "block");
+      $(".bg-modal").css("display", "block");
     }
   });
 
@@ -159,6 +160,12 @@ $(document).ready(function (event) {
 
     thisElement = "[modal = '" + element + "']";
     $(thisElement).css("display", "none");
+    $(".bg-modal").css("display", "none");
+  });
+
+  $(".bg-modal").click(function (e) {
+    $(".portfolio_modal").css("display", "none");
+    $(".bg-modal").css("display", "none");
   });
 
   $(".hamb").click(function (e) {
