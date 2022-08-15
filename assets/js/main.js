@@ -2,6 +2,7 @@ var xPos = 0;
 var yPos = 0;
 var lastScrolled = 0;
 var lastPosX = 0;
+var scroll = 0;
 $(document).ready(function (event) {
   var height = $(document).height();
   var width = $(document).width();
@@ -11,6 +12,29 @@ $(document).ready(function (event) {
 
   $(".curtain1").css("transform", "translateX(-500%)");
   $(".curtain2").css("transform", "translateX(500%)");
+
+  $(document).scroll(function (e) {
+    if (width < 1024) {
+      let scrollDoc = $(document).scrollTop();
+      if (scroll < scrollDoc) {
+        $(
+          ".portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
+        ).css("transform", "skew(2.5deg)");
+      } else {
+        $(
+          ".portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
+        ).css("transform", "skew(-2.5deg)");
+      }
+      scroll = scrollDoc;
+      setTimeout(() => {
+        $(
+          ".portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
+        ).removeAttr("style");
+      }, 300);
+
+      return scroll;
+    }
+  });
 
   // Coordinates of the Mouse
   $(document).mousemove(function (event) {

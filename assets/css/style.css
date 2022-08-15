@@ -312,11 +312,12 @@ body {
   border: 3px solid rgba(0, 153, 255, 0.8);
   text-decoration: none;
   color: rgba(0, 153, 255, 0.8);
-  transition: color 1.5s ease-out;
+  transition: color 1s ease-out;
   overflow: hidden;
 }
 .btn:hover {
   color: #0c0c0c;
+  font-weight: 600;
 }
 .btn .before {
   position: absolute;
@@ -332,6 +333,7 @@ body {
 .container {
   padding: 2rem;
   border: 1px solid rgba(0, 153, 255, 0.2);
+  transition: all 0.3s;
 }
 .container:hover .services_icon {
   transform: translateY(-0.5rem);
@@ -469,6 +471,9 @@ body {
 .main .parcours .xp-job .xp-job_content .xp-job_experiences .xp-job_list .xp-job_cards:hover {
   transform: translateX(0.5rem);
 }
+.main .parcours .xp-job .xp-job_content .xp-job_experiences .xp-job_list .xp-job_cards:hover .xp-job_name {
+  letter-spacing: 1px;
+}
 .main .parcours .xp-job .xp-job_content .xp-job_experiences .xp-job_list .xp-job_cards:hover::before {
   height: 100%;
 }
@@ -483,6 +488,7 @@ body {
   font-family: Poppins;
   font-weight: 300;
   font-size: 1.2rem;
+  transition: all 0.3s;
 }
 .main .parcours .xp-job .xp-job_content .xp-job_experiences .xp-job_list .xp-job_cards .xp-job_subname {
   font-family: Roboto, Nunito;
@@ -577,9 +583,29 @@ body {
   border: none;
   padding: 0;
   transform: skew(-1.5deg);
+  overflow: hidden;
+}
+.main .portfolio .portfolio_list .portfolio_cards::before {
+  content: "Voir";
+  position: absolute;
+  bottom: -1.8rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: transparent;
+  font-size: 1.2rem;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.5s;
 }
 .main .portfolio .portfolio_list .portfolio_cards:hover {
   transform: skew(1.5deg);
+}
+.main .portfolio .portfolio_list .portfolio_cards:hover::before {
+  color: #fff;
+  transform: translateY(-1.8rem);
+  padding: 0.3rem 0;
+  background-color: #4aff4a;
 }
 .main .portfolio .portfolio_list .portfolio_cards[project="H&G"] {
   background-image: url(../img/project_H&G.PNG);
@@ -607,18 +633,27 @@ body {
   text-align: center;
 }
 .main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content:hover .portfolio_name,
-.main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content:hover .portfolio_type,
-.main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content:hover .portfolio_more {
+.main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content:hover .portfolio_type {
   opacity: 1;
   transform: translate(-50%, 1rem);
 }
+.main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content:hover .portfolio_more {
+  opacity: 1;
+  transform: translateX(-3rem);
+}
 .main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content .portfolio_more {
   position: absolute;
-  top: 0;
-  right: 1rem;
+  top: 1rem;
+  right: -3rem;
+  width: 3rem;
   font-size: 1.2rem;
   opacity: 0;
   transition: all 0.5s;
+  transition-delay: 0.5s;
+  color: #fff;
+  background-color: #4aff4a;
+  padding: 0.3rem 0;
+  text-align: center;
 }
 .main .portfolio .portfolio_list .portfolio_cards .portfolio_cards_content .portfolio_type {
   position: absolute;
@@ -721,6 +756,7 @@ body {
   margin: auto;
   background-color: #0f0f0f;
   z-index: 5;
+  overflow-x: hidden;
 }
 .portfolio_modal .modal * {
   cursor: default;
@@ -728,11 +764,20 @@ body {
 .portfolio_modal .modal .modal_x {
   cursor: pointer;
   position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1rem;
+  right: 0;
   color: white;
-  mix-blend-mode: difference;
   font-size: 2rem;
+  background-color: rgba(0, 153, 255, 0.8);
+  padding: 0.3rem 0.7rem;
+  transition: all 0.5s ease;
+  width: 4rem;
+  text-align: center;
+}
+.portfolio_modal .modal .modal_x:hover {
+  background-color: rgba(255, 0, 0, 0.8);
+  width: 8rem;
+  font-size: 2.2rem;
 }
 .portfolio_modal .modal .modal_bg {
   width: 100%;
@@ -884,6 +929,9 @@ body {
   .main .parcours .about .about_content .about_text .about_infos .about_items {
     margin: 0.5rem 0;
   }
+  .main .parcours .about .about_content .about_text .about_cv {
+    transform: skew(-1.5deg);
+  }
   .main .parcours .about .about_content .about_cv {
     margin: auto;
   }
@@ -947,9 +995,14 @@ body {
   .portfolio_modal {
     width: 100vw;
     left: 0;
+    transform: skew(0);
   }
   .portfolio_modal .modal .modal_x {
     transform: translateX(0);
+    right: 0.5rem;
+  }
+  .portfolio_modal .modal .modal_content a .btn {
+    transform: skew(1.5deg);
   }
 
   .footer {

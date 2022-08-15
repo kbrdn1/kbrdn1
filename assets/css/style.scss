@@ -371,11 +371,13 @@ body {
   border: 3px solid $primary-color-op;
   text-decoration: none;
   color: $primary-color-op;
-  transition: color 1.5s ease-out;
+  transition: color 1s ease-out;
   overflow: hidden;
+
 
   &:hover {
     color: $black;
+    font-weight: 600;
   }
 
   .before {
@@ -393,6 +395,7 @@ body {
 .container {
   padding: 2rem;
   border: 1px solid $primary-color-darken;
+  transition: all .3s;
 
   &:hover {
     .services_icon {
@@ -558,6 +561,10 @@ body {
             &:hover {
               transform: translateX(0.5rem);
 
+              .xp-job_name {
+                letter-spacing: 1px;
+              }
+
               &::before {
                 height: 100%;
               }
@@ -575,6 +582,7 @@ body {
               font-family: Poppins;
               font-weight: 300;
               font-size: 1.2rem;
+              transition: all .3s;
             }
 
             .xp-job_subname {
@@ -691,9 +699,31 @@ body {
         border: none;
         padding: 0;
         transform: skew(-1.5deg);
+        overflow: hidden;
+
+        &::before {
+            content: "Voir";
+            position: absolute;
+            bottom: -1.8rem;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: transparent;
+            font-size: 1.2rem;
+            z-index: 5;
+            transition: all .3s ease-in-out;
+            transition-delay: .5s;
+        }
 
         &:hover {
           transform: skew(1.5deg);
+
+          &::before {
+            color: #fff;
+            transform: translateY(-1.8rem);
+            padding: .3rem 0;
+            background-color: rgb(74, 255, 74);
+          }
         }
 
         &[project="H&G"] {
@@ -729,20 +759,30 @@ body {
 
           &:hover {
             .portfolio_name,
-            .portfolio_type,
-            .portfolio_more {
+            .portfolio_type {
               opacity: 1;
               transform: translate(-50%, 1rem);
+            }
+
+            .portfolio_more {
+                opacity: 1;
+                transform: translateX(-3rem);
             }
           }
 
           .portfolio_more {
             position: absolute;
-            top: 0;
-            right: 1rem;
+            top: 1rem;
+            right: -3rem;
+            width: 3rem;
             font-size: 1.2rem;
             opacity: 0;
             transition: all 0.5s;
+            transition-delay: .5s;
+            color: #fff;
+            background-color: rgb(74, 255, 74);
+            padding: .3rem 0;
+            text-align: center;
           }
 
           .portfolio_type {
@@ -862,6 +902,7 @@ body {
     margin: auto;
     background-color: #0f0f0f;
     z-index: 5;
+    overflow-x: hidden;
 
     * {
       cursor: default;
@@ -870,11 +911,22 @@ body {
     .modal_x {
       cursor: pointer;
       position: fixed;
-      top: 1.5rem;
-      right: 1.5rem;
+      top: 1rem;
+      right: 0;
       color: white;
-      mix-blend-mode: difference;
       font-size: 2rem;
+      background-color: $primary-color-op;
+      padding: .3rem .7rem;
+      transition: all .5s ease;
+      width: 4rem;
+      text-align: center;
+
+      &:hover {
+        background-color: rgba(255, 0, 0, 0.8);
+        width: 8rem;
+        font-size: 2.2rem;
+        
+      }
     }
 
     .modal_bg {
@@ -1054,6 +1106,10 @@ body {
               margin: 0.5rem 0;
             }
           }
+
+          .about_cv {
+            transform: skew(-1.5deg);
+          }
         }
 
         .about_cv {
@@ -1110,7 +1166,7 @@ body {
     }
 
     .contact {
-        transform: skew(0);
+      transform: skew(0);
 
       .contact_title {
         margin-bottom: 3rem;
@@ -1139,9 +1195,17 @@ body {
   .portfolio_modal {
     width: 100vw;
     left: 0;
+    transform: skew(0);
 
-    .modal .modal_x {
-      transform: translateX(0);
+    .modal {
+      .modal_x {
+        transform: translateX(0);
+        right: .5rem;
+      }
+
+      .modal_content a .btn {
+        transform: skew(1.5deg);
+      }
     }
   }
 
