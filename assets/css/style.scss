@@ -927,10 +927,6 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  * {
-    transform: skew(0);
-  }
-  
   .curtain1 {
     width: 120%;
     right: 0;
@@ -1030,6 +1026,7 @@ body {
     .parcours {
       .about .about_content {
         flex-direction: column;
+        transform: skew(0);
 
         .about_portrait {
           display: flex;
@@ -1065,6 +1062,7 @@ body {
       }
 
       .services .services_content .services_cards {
+        transform: skew(0);
         margin: 1rem;
         padding: 1rem;
         width: max-content;
@@ -1076,27 +1074,44 @@ body {
         .xp-job_experiences {
           width: 100%;
           padding: 0;
+
+          .xp-job_list .xp-job_cards {
+            transform: skew(0);
+          }
         }
       }
 
-      .skills .skills_content {
-        padding: 1rem;
-
-        .skills_list .skills_cards {
+      .skills {
+        transform: skew(0);
+        .skills_content {
           padding: 1rem;
 
-          .skills_icon {
-            font-size: 2rem;
+          .skills_list .skills_cards {
+            padding: 1rem;
+            transform: skew(0);
+
+            .skills_icon {
+              font-size: 2rem;
+            }
           }
         }
       }
     }
 
-    .portfolio .portfolio_list .portfolio_cards {
-      height: 15rem;
+    .portfolio {
+      .portfolio_nav {
+        transform: skew(0);
+      }
+
+      .portfolio_list .portfolio_cards {
+        height: 15rem;
+        transform: skew(0);
+      }
     }
 
     .contact {
+        transform: skew(0);
+
       .contact_title {
         margin-bottom: 3rem;
       }
@@ -1115,6 +1130,7 @@ body {
 
         button {
           margin: auto;
+          transform: skew(1.5deg);
         }
       }
     }
