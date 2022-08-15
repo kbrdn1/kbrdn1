@@ -776,6 +776,10 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  * {
+    transform: skew(0);
+  }
+
   .curtain1 {
     width: 120%;
     right: 0;

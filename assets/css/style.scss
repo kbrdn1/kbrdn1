@@ -556,7 +556,7 @@ body {
             }
 
             &:hover {
-                transform: translateX(.5rem);
+              transform: translateX(0.5rem);
 
               &::before {
                 height: 100%;
@@ -693,7 +693,7 @@ body {
         transform: skew(-1.5deg);
 
         &:hover {
-            transform: skew(1.5deg);
+          transform: skew(1.5deg);
         }
 
         &[project="H&G"] {
@@ -927,6 +927,10 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  * {
+    transform: skew(0);
+  }
+  
   .curtain1 {
     width: 120%;
     right: 0;
