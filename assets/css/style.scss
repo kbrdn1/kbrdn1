@@ -122,9 +122,11 @@ body {
   transition: all 0.3s;
 
   .nav_logo {
-    transition: all 0.3s;
     position: absolute;
     left: 3rem;
+    transform: translateY(-2rem);
+    opacity: 0;
+    transition: all 0.4s 3s;
 
     .nav_logo_content {
       position: relative;
@@ -172,7 +174,7 @@ body {
     position: absolute;
     top: 2rem;
     right: 2rem;
-    transition: all 0.3s;
+    transition: all 0.4s 2.5s;
 
     .menu {
       display: none;
@@ -219,6 +221,9 @@ body {
     right: 3rem;
     display: flex;
     transition: all 0.3s ease-out;
+    transform: translateY(-2rem);
+    opacity: 0;
+    transition: all 0.4s 3s;
 
     .nav_items {
       transition: all 0.3s;
@@ -381,34 +386,35 @@ body {
 }
 
 .fixed-popup {
-    display: flex;
-    position: fixed;
-    top: 40%;
-    left: -2px;
-    transform: translateX(-8rem);
-    align-items: center;
-    z-index: 4;
-    transition: transform .4s ease-out;
+  display: flex;
+  position: fixed;
+  top: 40%;
+  left: -2px;
+  transform: translateX(-8rem);
+  align-items: center;
+  z-index: 4;
+  transition: transform 0.4s ease-out;
 
-    &:hover {
-        transform: translateX(0);
-    }
+  &:hover {
+    transform: translateX(0);
+  }
 
-    a {text-decoration: none;
+  a {
+    text-decoration: none;
     color: #fff;
-        cursor: pointer;
-        background-color: $mns-orange-op;
-        padding: 1.4rem 0;
-        text-align: center;
-        width: 8rem;
-        transform: skew(3deg);
-    }
+    cursor: pointer;
+    background-color: $mns-orange-op;
+    padding: 1.4rem 0;
+    text-align: center;
+    width: 8rem;
+    transform: skew(3deg);
+  }
 
-    img {
-        cursor: pointer;
-        width: 5.1rem;
-        transform: skew(3deg);
-    }
+  img {
+    cursor: pointer;
+    width: 5.1rem;
+    transform: skew(3deg);
+  }
 }
 
 .title {
@@ -799,7 +805,7 @@ body {
             .skills_name {
               font-family: Poppins;
               font-size: 1.1rem;
-              transition: transform 0.4s ease, letter-spacing .5s ease;
+              transition: transform 0.4s ease, letter-spacing 0.5s ease;
             }
           }
         }
@@ -812,6 +818,7 @@ body {
   }
 
   .portfolio {
+    position: relative;
     margin-top: 5rem;
 
     .portfolio_plus {
@@ -1221,14 +1228,19 @@ body {
 
   .nav {
     max-width: 100vw;
+    height: 4.2rem;
 
     .nav_logo {
       z-index: 5;
       left: 2rem;
+      transition: all 0.3s ease 2s;
     }
 
     .hamb {
+      opacity: 0;
+      transform: translateY(-2rem);
       z-index: 5;
+      transition: all 0.3s ease 2s;
 
       .menu {
         display: block;
@@ -1247,7 +1259,6 @@ body {
       transform: translateY(-3rem);
       opacity: 0;
       flex-direction: column;
-      transition: all 0.3s;
 
       .nav_items {
         margin: 0.7rem auto;
@@ -1295,6 +1306,7 @@ body {
       font-size: 1rem;
       left: 1rem;
       bottom: 2rem;
+      transition: all 0.3s ease 2s;
 
       span {
         font-size: 1.1rem;
@@ -1303,7 +1315,10 @@ body {
   }
 
   .fixed-popup {
-    top: 4rem;
+    top: unset;
+    left: -5.1rem;
+    bottom: 7rem;
+    transition: all 0.3s 2s;
   }
 
   .main {
@@ -1313,8 +1328,9 @@ body {
     .parcours {
       .about {
         .about_content {
-            flex-direction: column;
-            transform: skew(0);
+          flex-direction: column;
+          transform: skew(0);
+
           .about_me {
             flex-direction: column;
 
@@ -1459,6 +1475,8 @@ body {
       .modal_x {
         transform: translateX(0);
         right: 0;
+        background-color: rgba(255, 0, 0, 0.8);
+        font-size: 2rem;
       }
 
       .modal_content a .btn {

@@ -12,35 +12,56 @@ $(document).ready(function (event) {
 
   $(".curtain1").css("transform", "translateX(-500%)");
   $(".curtain2").css("transform", "translateX(500%)");
-  $(".home_logo").css("opacity", "1");
+  $(".home_logo, .home_text, .nav_logo, .nav_list, .hamb, .fixed-popup").css(
+    "opacity",
+    "1"
+  );
   $(".home_logo").css("transform", "translate(-50%, 0)");
-  $(".home_text").css("opacity", "1");
-  $(".home_text").css("transform", "translateY(0)");
+
+  $(".home_text, .nav_logo, .nav_list, .hamb").css(
+    "transform",
+    "translateY(0)"
+  );
 
   $(document).scroll(function (e) {
     if (width < 1024) {
       let scrollDoc = $(document).scrollTop();
-      if (scroll < scrollDoc) {
-        $(
-          ".contact_mns, .portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
-        ).css("transform", "skew(2.5deg)");
-        $(".about_content").css("transform", "skew(1deg)");
+      let element = $(".hamb").attr("state");
+      if (40 < scrollDoc) {
+        if (element == "close") {
+          $(".fixed-popup").css("bottom", "3rem");
+          $(".fixed-popup").css("left", "-2px");
+        }
       } else {
-        $(
-          ".contact_mns, .portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
-        ).css("transform", "skew(-2.5deg)");
-        $(".about_content").css("transform", "skew(-1deg)");
+        $(".fixed-popup").css("left", "-5.1rem");
       }
-      scroll = scrollDoc;
-      setTimeout(() => {
-        $(
-          ".contact_mns, .about_content, .portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
-        ).removeAttr("style");
-      }, 3200);
-
-      return scroll;
     }
   });
+
+  // $(document).scroll(function (e) {
+  //   if (width < 1024) {
+  //     let scrollDoc = $(document).scrollTop();
+  //     if (scroll < scrollDoc) {
+  //       $(
+  //         ".contact_mns, .portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
+  //       ).css("transform", "skew(2.5deg)");
+  //       $(".about_content").css("transform", "skew(1deg)");
+  //     } else {
+  //       $(
+  //         ".contact_mns, .portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
+  //       ).css("transform", "skew(-2.5deg)");
+  //       $(".about_content").css("transform", "skew(-1deg)");
+  //     }
+  //     scroll = scrollDoc;
+  //     setTimeout(() => {
+  //       $(
+  //         ".contact_mns, .about_content, .portfolio_cards, .about_content, .services_cards, .xp-job_cards, .skills_cards, .portfolio_nav, .contact_form, .contact_subtitle"
+  //       ).removeAttr("style");
+  //     }, 3200);
+
+  //     return scroll;
+  //   }
+  // });
 
   // Coordinates of the Mouse
   $(document).mousemove(function (event) {
@@ -204,6 +225,10 @@ $(document).ready(function (event) {
 
       if (element == "close") {
         $(this).attr("state", "open");
+        $(this).css("transition-delay", "0s");
+        $(".fixed-popup").css("bottom", "5rem");
+        $(".fixed-popup").css("left", "-2px");
+        $(".nav_logo").css("transition-delay", "0s");
         $(".nav_list").css("display", "flex");
         $(".nav_list").css("opacity", 1);
         $(".nav_list").css("transform", "translateY(0)");
@@ -220,6 +245,8 @@ $(document).ready(function (event) {
       }
       if (element == "open") {
         $(this).attr("state", "close");
+        $(".fixed-popup").css("bottom", "3rem");
+        $(".fixed-popup").css("left", "-2px");
         $(".nav_list").css("display", "none");
         $(".nav_list").css("opacity", 0);
         $(".nav_list").css("transform", "translateY(-3rem)");
@@ -242,11 +269,15 @@ $(document).ready(function (event) {
 
       if (element == "open") {
         $(".hamb").attr("state", "close");
+        $(".fixed-popup").css("bottom", "3rem");
+        $(".fixed-popup").css("left", "-2px");
         $(".nav_list").css("display", "none");
         $(".nav_list").css("opacity", 0);
         $(".nav_list").css("transform", "translateY(-3rem)");
         $(".nav_logo").css("transform", "translateY(-.5rem)");
         $(".hamb").css("transform", "translateY(-.5rem)");
+        $(".nav_social").css("transform", "translateY(.5rem)");
+        $(".nav_info").css("display", "none");
 
         $(".hamb .bar3").css("opacity", 1);
         $(".hamb .bar2").css("transform", "rotate(0)");
@@ -255,4 +286,7 @@ $(document).ready(function (event) {
       }
     }
   });
+  setTimeout(() => {
+    $(".fixed-popup").css("transition-delay", "0s");
+  }, 2000);
 });
