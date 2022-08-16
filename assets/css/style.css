@@ -944,7 +944,7 @@ body {
   z-index: 5;
   opacity: 1;
   transition: opacity 0.3s ease-out;
-  transform: skew(1.5deg);
+  transform: skew(1deg);
 }
 .portfolio_modal .modal {
   position: relative;
