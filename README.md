@@ -1,6 +1,6 @@
 <div align="center"> <br>
 
-# <a href="www.kylian-bardini.fr"><img alt="logo" width="30px" src="https://kylian-bardini.fr/assets/img/Logo_K.svg" />ylian Bardini</a>
+# <a href="www.kylian-bardini.fr"><img alt="logo" width="30px" src="https://kylian-bardini.fr/assets/img/Logo_K.svg" />ylian Bardini:dragon_face:</a>
 Bonjour, je suis Kylian Bardini, Développeur Frontend/Backend Junior et
 UX/UI Designer basé à Longwy.
 
