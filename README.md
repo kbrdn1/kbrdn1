@@ -19,8 +19,8 @@ UX/UI Designer basé à Longwy.
 
 ### Actuellement à la recherche d'une alternance sur Metz pour un BAC+3 Bachelor Développeur Fullstack.
 
-<a href="www.kylian-bardini.fr"><img alt="logo" width="128px" src="https://kylian-bardini.fr/assets/img/mns_logo.png" /></a>
-<a align="center" href="https://kylian-bardini.fr/assets/cv/CV_BARDINI_KYLIAN.pdf"><img alt="CV" width="50px" src="https://cdn-icons-png.flaticon.com/512/6588/6588143.png"/></a>
+<a href="www.kylian-bardini.fr"><img align="center" alt="logo" width="128px" src="https://kylian-bardini.fr/assets/img/mns_logo.png" /></a>
+<a href="https://kylian-bardini.fr/assets/cv/CV_BARDINI_KYLIAN.pdf"><img align="center" alt="CV" width="50px" src="https://cdn-icons-png.flaticon.com/512/6588/6588143.png"/></a>
 <br>
 
 #### Liens utiles:
