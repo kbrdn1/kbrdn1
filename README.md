@@ -1,6 +1,6 @@
 <div align="center"> <br>
 
-# <a href="www.kylian-bardini.fr"><img alt="logo" width="30px" src="https://kylian-bardini.fr/assets/img/Logo_K.svg" />ylian Bardini:dragon_face:</a>
+# <a href="https://kylian-bardini.fr"><img alt="logo" width="30px" src="https://kylian-bardini.fr/assets/img/Logo_K.svg" />ylian Bardini:dragon_face:</a>
 Bonjour, je suis Kylian Bardini, Développeur Frontend/Backend Junior et
 UX/UI Designer basé à Longwy.
 
@@ -24,7 +24,7 @@ UX/UI Designer basé à Longwy.
 <br>
 
 #### Liens utiles:
-<a href=""><img alt="Portfolio" width="22px" src="https://kylian-bardini.fr/assets/img/Logo_K.svg" /></a>
+<a href="https://kylian-bardini.fr"><img alt="Portfolio" width="22px" src="https://kylian-bardini.fr/assets/img/Logo_K.svg" /></a>
 <a href="https://www.linkedin.com/in/kylian-bardini-aa0528234/"><img alt="LinkedIn" width="24px" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" /></a>
 <a href="https://codepen.io/kbrdn1"><img alt="Codepen" width="24px" src="https://www.vectorlogo.zone/logos/codepen/codepen-tile.svg" /></a>
 <a href="https://twitter.com/kbrdn1"><img alt="Twitter" width="24px" src="https://www.vectorlogo.zone/logos/twitter/twitter-tile.svg" /></a>
