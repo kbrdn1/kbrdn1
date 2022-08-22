@@ -12,9 +12,11 @@ UX/UI Designer basé à Longwy.
 <img alt="Javacript" width="24px" src="https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg" />
 <img alt="Bootstap" width="24px" src="https://upload.vectorlogo.zone/logos/getbootstrap/images/987f8f6c-263a-47b1-a85d-853cfca215d9.svg" />
 <img alt="TailwindCSS" width="24px" src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" />
+<img alt="MySQL" width="24px" src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" />
 <img alt="Symfony" width="24px" src="https://www.vectorlogo.zone/logos/symfony/symfony-icon.svg" />
 <img alt="NodeJS" width="24px" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" />
 <img alt="ReactJS" width="24px" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" />
+<img alt="MongoDB" width="24px" src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" />
 <img alt="GIT" width="24px" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" />
 
 ### Actuellement à la recherche d'une alternance sur Metz pour un BAC+3 Bachelor Développeur Fullstack.
