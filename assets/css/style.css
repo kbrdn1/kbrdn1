@@ -931,7 +931,7 @@ body {
   padding: 0.7rem 0;
 }
 
-.main .parcours .skills .skills_content .skills_list .skills_cards [alt=mysql] {
+.main .parcours .skills .skills_content .skills_list .skills_cards [alt=mysql], .main .parcours .skills .skills_content .skills_list .skills_cards [alt=mongodb] {
   height: 4rem;
 }
 
@@ -1611,6 +1611,16 @@ body {
   }
   .main .parcours .skills .skills_content .skills_list .skills_cards .skills_icon {
     font-size: 2rem;
+  }
+  .main .parcours .skills .skills_content .skills_list .skills_cards [alt=tailwind] {
+    margin-bottom: 0;
+  }
+  .main .parcours .skills .skills_content .skills_list .skills_cards [alt=mysql], .main .parcours .skills .skills_content .skills_list .skills_cards [alt=mongodb] {
+    height: 3.5rem;
+    margin-top: .2rem;
+  }
+  .main .parcours .skills .skills_content .skills_list .skills_cards .sp {
+    margin-top: -1rem;
   }
   .main .portfolio .portfolio_nav {
     -webkit-transform: skew(0);

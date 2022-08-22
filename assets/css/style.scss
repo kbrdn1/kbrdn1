@@ -802,7 +802,7 @@ body {
               padding: 0.7rem 0;
             }
 
-            [alt=mysql] {
+            [alt=mysql], [alt=mongodb] {
               height: 4rem;
             }
 
@@ -1421,6 +1421,19 @@ body {
 
             .skills_icon {
               font-size: 2rem;
+            }
+
+            [alt=tailwind] {
+              margin-bottom: 0;
+            }
+
+            [alt=mysql], [alt=mongodb] {
+              height: 3.5rem;
+              margin-top: .2rem;
+            }
+
+            .sp {
+              margin-top: -1rem;
             }
           }
         }
