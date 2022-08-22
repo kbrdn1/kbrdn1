@@ -24,6 +24,8 @@ UX/UI Designer basé à Longwy.
 <a href="www.kylian-bardini.fr"><img align="center" alt="logo" width="128px" src="https://kylian-bardini.fr/assets/img/mns_logo.png" /></a>
 <a href="https://kylian-bardini.fr/assets/cv/CV_BARDINI_KYLIAN.pdf"><img align="center" alt="CV" width="50px" src="https://cdn-icons-png.flaticon.com/512/6588/6588143.png"/></a>
 <br>
+<br>
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kbrdn1&layout=compact&theme=dracula&title_color=0099ff&bg_color=121212)](https://github.com/anuraghazra/github-readme-stats)
 
 #### Liens utiles:
 <a href="https://kylian-bardini.fr"><img alt="Portfolio" width="22px" src="https://kylian-bardini.fr/assets/img/Logo_K.svg" /></a>
