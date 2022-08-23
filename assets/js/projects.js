@@ -50,7 +50,7 @@ var projects = [
         name: "House & Garden",
         project: "portfolio3",
         type: "image",
-        img: "HGimg",
+        img: "HGimg.png",
         description: "Chartre graphique pour la société House and Garden",
         list: [
             "Photoshop",
