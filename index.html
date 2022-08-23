@@ -17,7 +17,7 @@
     <title>Kylian Bardini | Portfolio | Développeur Frontend/Backend Junior</title>
 </head>
 
-<body>
+<body id="body">
     <div class="curtain1"></div>
     <div class="curtain2"></div>
     <div class="cursor" id="cursor"></div>
@@ -116,7 +116,7 @@
         </div>
     </section>
 
-    <div class="fixed-popup" >
+    <div class="fixed-popup">
         <a href="#contact">Contactez-moi</a>
         <img src="./assets/img/mns_logo.png" alt="mns-logo">
     </div>
@@ -186,28 +186,7 @@
             <div class="services">
                 <h2 class="services_title title">Services</h2>
 
-                <div class="services_content">
-                    <div class="services_cards container">
-                        <i class="fa-solid fa-code services_icon"></i>
-                        <div class="services_name">Web Developpement</div>
-                        <div class="services_description">Développement de fonctionnalités front-end et back-end pour
-                            améliorer, poursuivre ou convertir un projet web déjà existant.</div>
-                    </div>
-
-                    <div class="services_cards container">
-                        <i class="fa-solid fa-pencil-alt services_icon"></i>
-                        <div class="services_name">Ui design</div>
-                        <div class="services_description">Réalisation complète d'une maquette et d'une charte graphique
-                            prête à l'emploi ou d'éléments spécifiques au sein d'un projet web, je communique à travers
-                            le graphisme une véritable identité.</div>
-                    </div>
-
-                    <div class="services_cards container">
-                        <i class="fa-solid fa-user-group services_icon"></i>
-                        <div class="services_name">Ux Design</div>
-                        <div class="services_description">Amélioration de l'expérience utilisateur en prenant en compte
-                            la diversité et les exigences à travers des méthodes de travail spécifiques.</div>
-                    </div>
+                <div class="services_content" id="services">
                 </div>
             </div>
 
@@ -216,62 +195,14 @@
                     <div class="xp-job_experiences">
                         <h3 class="xp-job_subtitle subtitle">Diplômes</h3>
 
-                        <div class="xp-job_list">
-                            <div class="xp-job_cards container">
-                                <p class="xp-job_date">Octobre 2021 - Juin 2022</p>
-
-                                <h4 class="xp-job_name">CCI Longwy - EESC</h4>
-
-                                <p class="xp-job_subname">BAC+2 - Développeur Web et Web mobile</p>
-
-                                <p class="xp-job_description">Longwy</p>
-                            </div>
-
-                            <div class="xp-job_cards container">
-                                <p class="xp-job_date">2020</p>
-
-                                <h4 class="xp-job_name">Lycée Jean ZAY</h4>
-
-                                <p class="xp-job_subname">Bacalauréat - STI2D option SIN</p>
-
-                                <p class="xp-job_description">Jarny</p>
-                            </div>
-
-                            <div class="xp-job_cards container">
-                                <p class="xp-job_date">2016</p>
-
-                                <h4 class="xp-job_name">Collège Paul VERLAINE</h4>
-
-                                <p class="xp-job_subname">Brevet des collèges</p>
-
-                                <p class="xp-job_description">Longuyon</p>
-                            </div>
+                        <div class="xp-job_list" id="diplomes">
                         </div>
                     </div>
 
                     <div class="xp-job_experiences">
                         <h3 class="xp-job_subtitle subtitle">Expériences</h3>
 
-                        <div class="xp-job_list">
-                            <div class="xp-job_cards container">
-                                <p class="xp-job_date">Octobre 2020 - Octobre 2021</p>
-
-                                <h4 class="xp-job_name">EUROSTAMP</h4>
-
-                                <p class="xp-job_subname">Opérateur de production</p>
-
-                                <p class="xp-job_description">Villers-la-Montagne</p>
-                            </div>
-
-                            <div class="xp-job_cards container">
-                                <p class="xp-job_date">Mars 2018</p>
-
-                                <h4 class="xp-job_name">Mairie</h4>
-
-                                <p class="xp-job_subname">Serveur de restaurant</p>
-
-                                <p class="xp-job_description">Longuyon</p>
-                            </div>
+                        <div class="xp-job_list" id="job">
                         </div>
                     </div>
                 </div>
@@ -283,83 +214,12 @@
                 <div class="skills_content container">
                     <h3 class="skills_subtitle subtitle">Programmation</h3>
 
-                    <div class="skills_list">
-
-                        <div class="skills_cards container">
-                            <i class="fa-brands fa-html5 skills_icon"></i>
-                            <p class="skills_name">HTML 5</p>
-                        </div>
-
-                        <div class=" skills_cards container">
-                            <i class="fa-brands fa-css3 skills_icon"></i>
-                            <p class="skills_name">CSS 3</p>
-                        </div>
-
-                        <div class=" skills_cards container">
-                            <i class="fa-brands fa-js skills_icon"></i>
-                            <p class="skills_name">JavaScript</p>
-                        </div>
-
-                        <div class=" skills_cards container">
-                            <i class="fa-brands fa-bootstrap skills_icon"></i>
-                            <p class="skills_name">Bootstrap</p>
-                        </div>
-
-                        <div class=" skills_cards container">
-                            <img src="./assets/img/tailwind.svg" alt="tailwind" class="skills_icon">
-                            <p class="skills_name">Tailwind</p>
-                        </div>
-
-                        <div class=" skills_cards container">
-                            <img src="./assets/img/mysql-icon.svg" alt="mysql" class="skills_icon">
-                            <p class="skills_name sp">MySql</p>
-                        </div>
-
-                        <div class=" skills_cards container">
-                            <i class="fa-brands fa-symfony skills_icon"></i>
-                            <p class="skills_name">Symfony</p>
-                        </div>
-
-                        <div class=" skills_cards container">
-                            <i class="fa-brands fa-node skills_icon"></i>
-                            <p class="skills_name">NodeJS</p>
-                        </div>
-
-                        <div class=" skills_cards container">
-                            <i class="fa-brands fa-react skills_icon"></i>
-                            <p class="skills_name">ReactJS</p>
-                        </div>
-
-                        <div class=" skills_cards container">
-                            <img src="./assets/img/mongodb-icon.svg" alt="mongodb" class="skills_icon">
-                            <p class="skills_name sp">MongoDB</p>
-                        </div>
-
-                        <div class=" skills_cards container">
-                            <i class="fa-brands fa-git-alt skills_icon"></i>
-                            <p class="skills_name">GIT</p>
-                        </div>
+                    <div class="skills_list" id="skills_list1">
                     </div>
 
                     <h3 class="skills_subtitle subtitle">Conception graphique</h3>
 
-                    <div class="skills_list">
-
-                        <div class="skills_cards container">
-                            <i class="fa-solid fa-pencil-alt skills_icon"></i>
-                            <p class="skills_name">Photoshop</p>
-                        </div>
-
-                        <div class=" skills_cards container">
-                            <i class="fa-solid fa-pen-fancy skills_icon"></i>
-                            <p class="skills_name">Illustrator</p>
-                        </div>
-
-                        <div class=" skills_cards container">
-                            <i class="fa-solid fa-window-restore skills_icon"></i>
-                            <p class="skills_name">XD</p>
-                        </div>
-
+                    <div class="skills_list" id="skills_list2">
                     </div>
                 </div>
             </div>
@@ -384,77 +244,7 @@
                 <div class="portfolio_nav_items" type="image">Image</div>
             </nav>
 
-            <div class="portfolio_list">
-                <div class="portfolio_cards" project="MyHackount" type="site">
-                    <div class="portfolio_cards_content btn" btn="MyHackount">
-                        <i class="fa-solid fa-plus portfolio_more"></i>
-
-                        <div class="portfolio_type">Site Web</div>
-
-                        <h3 class="portfolio_name">MyHackount</h3>
-
-                        <div class="before"></div>
-                    </div>
-                </div>
-
-                <div class="portfolio_cards container" project="H&G" type="site">
-                    <div class="portfolio_cards_content btn" btn="H&G">
-                        <i class="fa-solid fa-plus portfolio_more"></i>
-
-                        <div class="portfolio_type">Site web</div>
-
-                        <h3 class="portfolio_name">House & Garden</h3>
-
-                        <div class="before"></div>
-                    </div>
-                </div>
-
-                <div class="portfolio_cards container" project="reactWorld" type="site">
-                    <div class="portfolio_cards_content btn" btn="reactWorld">
-                        <i class="fa-solid fa-plus portfolio_more"></i>
-
-                        <div class="portfolio_type">Site Web</div>
-
-                        <h3 class="portfolio_name">React World</h3>
-
-                        <div class="before"></div>
-                    </div>
-                </div>
-
-                <div class="portfolio_cards container" project="portfolio3" type="image">
-                    <div class="portfolio_cards_content btn" btn="portfolio3">
-                        <i class="fa-solid fa-plus portfolio_more"></i>
-
-                        <div class="portfolio_type">Image</div>
-
-                        <h3 class="portfolio_name">House & Garden</h3>
-
-                        <div class="before"></div>
-                    </div>
-                </div>
-
-                <div class="portfolio_cards container" project="portfolio1" type="site">
-                    <div class="portfolio_cards_content btn" btn="portfolio1">
-                        <i class="fa-solid fa-plus portfolio_more"></i>
-
-                        <div class="portfolio_type">Site Web</div>
-
-                        <h3 class="portfolio_name">CRUD MVC</h3>
-                        <div class="before"></div>
-                    </div>
-                </div>
-
-                <div class="portfolio_cards container " project="portfolio2" type="site">
-                    <div class="portfolio_cards_content btn" btn="portfolio2">
-                        <i class="fa-solid fa-plus portfolio_more"></i>
-
-                        <div class="portfolio_type">Site Web</div>
-
-                        <h3 class="portfolio_name">CRUD PHP</h3>
-
-                        <div class="before"></div>
-                    </div>
-                </div>
+            <div class="portfolio_list" id="portfolio_list">
 
             </div>
 
@@ -508,216 +298,6 @@
     </main>
     <div class="bg-modal"></div>
 
-    <div class="portfolio_modal" modal="H&G">
-        <div class="modal">
-            <i class="fa-solid fa-xmark modal_x" close="H&G"></i>
-            <img src="./assets/img/project_H&G.PNG" alt="modal_bg" class="modal_bg">
-            <div class="modal_content">
-                <div class="modal_type">Site Web</div>
-
-                <div class="modal_title title">House & Garden</div>
-
-                <div class="modal_description">Site internet pour un paysagiste, avec demande de devis
-                    et
-                    espace administrateur.</div>
-
-                <div class="modal_construct title">Construit avec:</div>
-
-                <ul class="construct_list">
-                    <li class="construct_items">HTML</li>
-
-                    <li class="construct_items">CSS</li>
-
-                    <li class="construct_items">JavaScript</li>
-
-                    <li class="construct_items">Symfony</li>
-
-                    <li class="construct_items">Twig</li>
-
-                    <li class="construct_items">Doctrine</li>
-
-                    <li class="construct_items">MySQL</li>
-                </ul>
-
-                <a href="https://github.com/kbrdn1/House-and-Garden-3" target="_blank">
-                    <div class="btn" btn="modal">Voir le projet
-                        <div class="before"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio_modal" modal="portfolio1">
-        <div class="modal">
-            <i class="fa-solid fa-xmark modal_x" close="portfolio1"></i>
-            <img src="./assets/img/portfolio1.jpg" alt="modal_bg" class="modal_bg">
-            <div class="modal_content">
-                <div class="modal_type">Site Web</div>
-
-                <div class="modal_title title">CRUD MVC</div>
-
-                <div class="modal_description">Réalisation d'un CRUD avec le modèle d'architecture MVC</div>
-
-                <div class="modal_construct title">Construit avec:</div>
-
-                <ul class="construct_list">
-                    <li class="construct_items">HTML</li>
-
-                    <li class="construct_items">CSS</li>
-
-                    <li class="construct_items">PHP</li>
-
-                    <li class="construct_items">Bootstrap</li>
-
-                    <li class="construct_items">MySQL</li>
-                </ul>
-
-                <a href="https://github.com/kbrdn1/crud-mvc" target="_blank">
-                    <div class="btn" btn="modal">Voir le projet
-                        <div class="before"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio_modal" modal="portfolio2">
-        <div class="modal">
-            <i class="fa-solid fa-xmark modal_x" close="portfolio2"></i>
-            <img src="./assets/img/portfolio2.jpg" alt="modal_bg" class="modal_bg">
-            <div class="modal_content">
-                <div class="modal_type">Site Web</div>
-
-                <div class="modal_title title">CRUD PHP</div>
-
-                <div class="modal_description">Réalisation d'un CRUD en PHP</div>
-
-                <div class="modal_construct title">Construit avec:</div>
-
-                <ul class="construct_list">
-                    <li class="construct_items">HTML</li>
-
-                    <li class="construct_items">CSS</li>
-
-                    <li class="construct_items">PHP</li>
-
-                    <li class="construct_items">MySQL</li>
-                </ul>
-
-                <a href="https://github.com/kbrdn1/Crud-PHP" target="_blank">
-                    <div class="btn" btn="modal">Voir le projet
-                        <div class="before"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio_modal" modal="portfolio3">
-        <div class="modal">
-            <i class="fa-solid fa-xmark modal_x" close="portfolio3"></i>
-
-            <img src="./assets/img/HGimg.PNG" alt="modal_bg" class="modal_bg">
-
-            <div class="modal_content">
-                <div class="modal_type">Image</div>
-
-                <div class="modal_title title">House & Garden</div>
-
-                <div class="modal_description">Chartre graphique pour la société House and Garden</div>
-
-                <div class="modal_construct title">Construit avec:</div>
-
-                <ul class="construct_list">
-                    <li class="construct_items">Photoshop</li>
-
-                    <li class="construct_items">Illustrator</li>
-
-                    <li class="construct_items">InDesign</li>
-                </ul>
-
-                <a href="./assets/Charte graphique_H&G.pdf" target="_blank">
-                    <div class="btn" btn="modal">Voir le projet
-                        <div class="before"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio_modal" modal="reactWorld">
-        <div class="modal">
-            <i class="fa-solid fa-xmark modal_x" close="reactWorld"></i>
-            <img src="./assets/img/reactworld.jpg" alt="modal_bg" class="modal_bg">
-            <div class="modal_content">
-                <div class="modal_type">Site Web</div>
-
-                <div class="modal_title title">React World</div>
-
-                <div class="modal_description">Site contenant différentes information sur les pays du monde via une API
-                </div>
-
-                <div class="modal_construct title">Construit avec:</div>
-
-                <ul class="construct_list">
-                    <li class="construct_items">ReactJS</li>
-
-                    <li class="construct_items">SASS</li>
-
-                    <li class="construct_items">restcountries API</li>
-                </ul>
-
-                <a href="https://github.com/kbrdn1/React-World" target="_blank">
-                    <div class="btn" btn="modal">Voir le projet
-                        <div class="before"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio_modal" modal="MyHackount">
-        <div class="modal">
-            <i class="fa-solid fa-xmark modal_x" close="MyHackount"></i>
-            <img src="./assets/img/MyHackount.png" alt="modal_bg" class="modal_bg">
-            <div class="modal_content">
-                <div class="modal_type">Site Web</div>
-
-                <div class="modal_title title">MyHackount</div>
-
-                <div class="modal_description">Projet MERN. Il s'agit d'un réseau social réaliser avec
-                    Nodes.js pour créer une API avec MongoDB et Express puis React.js afin de créer l'interface de
-                    l'application.
-                </div>
-
-                <div class="modal_construct title">Construit avec:</div>
-
-                <ul class="construct_list">
-                    <li class="construct_items">NodeJS</li>
-
-                    <li class="construct_items">ReactJS</li>
-
-                    <li class="construct_items">Redux</li>
-
-                    <li class="construct_items">MongoDB</li>
-
-                    <li class="construct_items">Express</li>
-
-                    <li class="construct_items">SASS</li>
-
-                    <li class="construct_items">NPM</li>
-                </ul>
-
-                <a href="https://github.com/kbrdn1/MyHackount-MERN-Project" target="_blank">
-                    <div class="btn" btn="modal">Voir le projet
-                        <div class="before"></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
     <footer class="footer container">
         <p class="footer_content">&#169; <span id="currentYear"></span> Kylian BARDINI</p>
     </footer>
@@ -730,6 +310,10 @@
     <script src="./assets/js/parallax.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
+    <script src="./assets/js/services.js"></script>
+    <script src="./assets/js/xp-job.js"></script>
+    <script src="./assets/js/skills.js"></script>
+    <script src="./assets/js/projects.js"></script>
     <script src="./assets/js/main.js"></script>
 
 </body>
