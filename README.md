@@ -1,9 +1,8 @@
 <div align="left>
 
-<br><img src="https://github.com/kbrdn1/kbrdn1/raw/main/assets/img/header_bg.jpg" width="410" alt="header" align="right" />
+<br><img src="https://github.com/kbrdn1/kbrdn1/raw/main/assets/img/header.jpg" width="410" alt="header" align="right" />
 </div>
 <p align="left">
-<div align="left">
 
 # <a href="https://kylian-bardini.fr"><img alt="logo" width="30px" src="https://kylian-bardini.fr/assets/img/Logo_K.svg" />ylian Bardini</a>
 
@@ -38,8 +37,4 @@ Actuellement Ã  la recherche d'une alternance sur Metz pour un BAC+3 Bachelor DÃ
 
 
 <a href="https://kylian-bardini.fr/assets/cv/CV_BARDINI_KYLIAN.pdf"><img align="center" alt="CV" height="20px" src="https://img.shields.io/badge/-Voir mon CV-5100ff"/></a>
-<br>
-<br>
-
-</div>
 </p>
