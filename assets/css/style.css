@@ -931,6 +931,10 @@ body {
   padding: 0.7rem 0;
 }
 
+.main .parcours .skills .skills_content .skills_list .skills_cards [alt=tailwind] {
+  margin-bottom: 2rem;
+}
+
 .main .parcours .skills .skills_content .skills_list .skills_cards [alt=mysql-icon], .main .parcours .skills .skills_content .skills_list .skills_cards [alt=mongodb-icon] {
   height: 4rem;
 }
@@ -1613,7 +1617,7 @@ body {
     font-size: 2rem;
   }
   .main .parcours .skills .skills_content .skills_list .skills_cards [alt=tailwind] {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
   .main .parcours .skills .skills_content .skills_list .skills_cards [alt=mysql-icon], .main .parcours .skills .skills_content .skills_list .skills_cards [alt=mongodb-icon] {
     height: 3.5rem;

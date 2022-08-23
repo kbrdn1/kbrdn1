@@ -66,7 +66,7 @@ skills.map((skill) => {
                         </div>`)
     : (list.innerHTML += `<div class=" skills_cards container">
                             <img src="./assets/img/${skill.icon}.svg" alt="${skill.icon}" class="skills_icon">
-                            <p class="skills_name">${skill.name}</p>
+                            <p class="skills_name sp">${skill.name}</p>
                         </div>`);
 });
 
