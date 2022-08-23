@@ -1,18 +1,22 @@
-<div align="left>
-<img src="https://github.com/kbrdn1/kbrdn1/raw/main/assets/img/header.jpg" width="410" alt="header" align="right" />
+
+<div align="left>          
+            
+<br><img src="https://github.com/kbrdn1/kbrdn1/raw/main/assets/img/13.png" width="410" alt="header" align="right" />
 </div>
-<p align="left">
-
-# <a href="https://kylian-bardini.fr"><img alt="logo" width="30px" src="https://kylian-bardini.fr/assets/img/Logo_K.svg" />ylian Bardini</a>
-
-<a href="https://kylian-bardini.fr">
+                                                                                                                     
+# <a href="https://kylian-bardini.fr"><img alt="logo" width="30px" src="https://kylian-bardini.fr/assets/img/Logo_K.svg" />ylian Bardini</a><a href="https://kylian-bardini.fr">
 <img src="https://img.shields.io/badge/-Website-ff8400" alt="Website"/></a>
 <a href="https://www.linkedin.com//in/kylian-bardini-aa0528234/">
 <img src="https://img.shields.io/badge/-LinkedIn-%233781da" alt="LinkedIn"/></a>
 <a href="https://codepen.io/kbrdn1">
 <img src="https://img.shields.io/badge/-Codepen-222222" alt="Codepen"/></a>
 <a href="https://twitter.com/kbrdn1">
-<img src="https://img.shields.io/badge/-Twitter-00a6ff" alt="Twiter"/></a>
+<img src="https://img.shields.io/badge/-Twitter-00a6ff" alt="Twiter"/></a>                                                                                                        
+<p align="left">
+               
+
+
+
 
 Bonjour, je suis Kylian Bardini, Développeur Frontend/Backend Junior et
 UX/UI Designer basé à Longwy.
