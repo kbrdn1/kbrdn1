@@ -1,6 +1,5 @@
 <div align="left>
-
-<br><img src="https://github.com/kbrdn1/kbrdn1/raw/main/assets/img/header.jpg" width="410" alt="header" align="right" />
+<img src="https://github.com/kbrdn1/kbrdn1/raw/main/assets/img/header.jpg" width="410" alt="header" align="right" />
 </div>
 <p align="left">
 
