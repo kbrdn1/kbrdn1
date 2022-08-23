@@ -1,10 +1,6 @@
 
 <div align="left>          
-            
-            
-            
-            
-<br><img src="https://github.com/kbrdn1/kbrdn1/raw/main/assets/img/13.png" width="410" alt="header" align="right" />
+<img src="https://github.com/kbrdn1/kbrdn1/raw/main/assets/img/13.png" width="410" alt="header" align="right"/>
 </div>
                                                                                                                      
 # <a href="https://kylian-bardini.fr"><img alt="logo" width="30px" src="https://kylian-bardini.fr/assets/img/Logo_K.svg" />ylian Bardini</a><a href="https://kylian-bardini.fr">
