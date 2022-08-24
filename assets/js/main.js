@@ -24,8 +24,17 @@ $(document).ready(function (event) {
   );
 
   $(document).scroll(function (e) {
+    let scrollDoc = $(document).scrollTop();
+    if (10 > scrollDoc) {
+      $(".nav_list").css("cursor", "default");
+      $(".nav_links-init").css("cursor", "default");
+      $(".nav_links-plus").css("cursor", "default");
+    } else {
+      $(".nav_list").css("cursor", "unset");
+      $(".nav_links-init").css("cursor", "unset");
+      $(".nav_links-plus").css("cursor", "unset");
+    }
     if (width < 1024) {
-      let scrollDoc = $(document).scrollTop();
       let element = $(".hamb").attr("state");
       if (40 < scrollDoc) {
         if (element == "close") {
