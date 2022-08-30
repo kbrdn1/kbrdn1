@@ -24,6 +24,9 @@ $(document).ready(function (event) {
   );
 
   $(document).scroll(function (e) {
+    var width = $(document).width();
+    if (width < 1024)
+      $(".parallax-slider").attr("src", "./assets/img/header_bg.jpg");
     let scrollDoc = $(document).scrollTop();
     // if (10 > scrollDoc) {
     //   $(".nav_list").css("cursor", "default");
@@ -69,6 +72,9 @@ $(document).ready(function (event) {
     $(".parallax-slider").attr("src", "./assets/img/header_bg.jpg");
 
   $(".home").mousemove(function (e) {
+    var width = $(document).width();
+    if (width < 1024)
+      $(".parallax-slider").attr("src", "./assets/img/header_bg.jpg");
     if (width > 1024) {
       var width = $(this).width() / 2;
       xPos = e.clientX;
