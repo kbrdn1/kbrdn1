@@ -25,15 +25,15 @@ $(document).ready(function (event) {
 
   $(document).scroll(function (e) {
     let scrollDoc = $(document).scrollTop();
-    if (10 > scrollDoc) {
-      $(".nav_list").css("cursor", "default");
-      $(".nav_links-init").css("cursor", "default");
-      $(".nav_links-plus").css("cursor", "default");
-    } else {
-      $(".nav_list").css("cursor", "unset");
-      $(".nav_links-init").css("cursor", "unset");
-      $(".nav_links-plus").css("cursor", "unset");
-    }
+    // if (10 > scrollDoc) {
+    //   $(".nav_list").css("cursor", "default");
+    //   $(".nav_links-init").css("cursor", "default");
+    //   $(".nav_links-plus").css("cursor", "default");
+    // } else {
+    //   $(".nav_list").css("cursor", "unset");
+    //   $(".nav_links-init").css("cursor", "unset");
+    //   $(".nav_links-plus").css("cursor", "unset");
+    // }
     if (width < 1024) {
       let element = $(".hamb").attr("state");
       if (40 < scrollDoc) {
@@ -44,7 +44,47 @@ $(document).ready(function (event) {
       } else {
         $(".fixed-popup").css("left", "-5.1rem");
       }
+    } else {
+      if (900 < scrollDoc) {
+        // $(".nav").css("background-image", "url(./assets/img/bg_gota.png)");
+        // $(".nav").css("top", "-1.3rem");
+        // $(".nav").css("border-bottom", "3px solid #0099FF");
+        // $(".nav").css("cursor", "default");
+        // $(".nav_list").css("cursor", "default");
+        // $(".nav_links-init, .nav_links-init i").css("cursor", "default");
+        // $(".nav_links-plus, .nav_links-init i").css("cursor", "default");
+      } else {
+        // $(".nav").css("background-image", "none");
+        // $(".nav").css("top", "0");
+        // $(".nav").css("border-bottom", "none");
+        // $(".nav").css("cursor", "unset");
+        // $(".nav_list").css("cursor", "unset");
+        // $(".nav_links-init, .nav_links-init i").css("cursor", "unset");
+        // $(".nav_links-plus, .nav_links-init i").css("cursor", "unset");
+      }
     }
+  });
+
+  if (width < 1024)
+    $(".parallax-slider").attr("src", "./assets/img/header_bg.jpg");
+
+  $(".home").mousemove(function (e) {
+    if (width > 1024) {
+      var width = $(this).width() / 2;
+      xPos = e.clientX;
+
+      if (xPos < width) {
+        $(".parallax-slider").attr("src", "./assets/img/header_bg2.png");
+      }
+      if (xPos > width) {
+        $(".parallax-slider").attr("src", "./assets/img/header_bg3.png");
+      }
+    }
+  });
+
+  $(".home").mouseout(function (e) {
+    if (width > 1024)
+      $(".parallax-slider").attr("src", "./assets/img/header_bg1.png");
   });
 
   // $(document).scroll(function (e) {

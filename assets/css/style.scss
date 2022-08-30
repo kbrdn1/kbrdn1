@@ -45,7 +45,7 @@ html {
 }
 
 * {
-  cursor: none;
+  // cursor: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -89,6 +89,7 @@ body {
 }
 
 .cursor {
+  display: none;
   position: absolute;
   width: 25px;
   height: 25px;
@@ -116,10 +117,12 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 10vh;
+  height: 5rem;
   font-size: 1.1rem;
   z-index: 4;
   transition: all 0.3s;
+  background-size: cover;
+  // background-image: url("../img/bg_gota.png");
 
   .nav_logo {
     position: absolute;
@@ -376,19 +379,19 @@ body {
     .home_svg-top {
       cursor: default;
       position: absolute;
-      top: -11rem;    
-      right:-2.3rem;
-      height: 50%; 
+      top: -11rem;
+      right: -2.3rem;
+      height: 50%;
       transform: rotate(60deg);
       filter: brightness(0.5);
       transition: all 0.5s ease;
     }
     .home_svg-bottom {
       cursor: default;
-      position: absolute;  
-      left: -20rem;  
+      position: absolute;
+      left: -20rem;
       bottom: -1rem;
-      height: 50%; 
+      height: 50%;
       transform: rotate(180deg);
       filter: brightness(0.5);
     }
@@ -521,12 +524,13 @@ body {
 }
 
 .main {
-  width: 60%;
+  width: 100%;
   margin: auto;
   padding: 5rem 0;
 
   .parcours {
     .about {
+      padding-inline: 20%;
       .about_content {
         display: flex;
         transform: skew(-1.5deg);
@@ -551,6 +555,10 @@ body {
             .about_description {
               font-family: Poppins;
               margin-bottom: 1rem;
+              span {
+                color: $primary-color-op;
+                font-weight: 600;
+              }
             }
 
             .about_infos {
@@ -654,18 +662,42 @@ body {
     .services {
       margin-top: 5rem;
 
+      .services_title {
+        margin-left: 20%;
+      }
+
       .services_content {
+        cursor: default;
+        padding-inline: 20%;
         display: flex;
         flex-wrap: wrap;
+        padding-top: 4rem;
         justify-content: space-evenly;
+        background-color: $black;
+        background-image: url("../../assets/img/bg_services.jpg");
+        background-blend-mode: luminosity;
+        background-size: cover;
+        box-shadow: 0px 0px 2px $primary-color-op;
+        transition: all 0.4s ease;
+
+        &:hover {
+          background-blend-mode: normal;
+        }
+
+        * {
+          cursor: default;
+        }
 
         .services_cards {
           text-align: center;
           margin: 0 2rem;
           width: 400px;
+          height: fit-content;
           margin-bottom: 3rem;
-          transition: transform 0.4s ease;
+          transition: transform 0.4s ease, border 0.4s ease;
           transform: skew(1.5deg);
+          background-color: $black;
+          box-shadow: 0px 0px 2px $primary-color-op;
 
           &::before {
             content: "";
@@ -681,8 +713,15 @@ body {
           &:hover {
             transform: translateY(-0.5rem);
 
+            // border-bottom: 5px solid #0099ff;
+
             &::before {
               width: 100%;
+            }
+
+            .services_before {
+              background-color: $primary-color-op;
+              width: 99%;
             }
           }
 
@@ -690,6 +729,13 @@ body {
             margin: 1rem;
             font-size: 3rem;
             color: $primary-color-op;
+          }
+
+          .services_icon-img {
+            width: 6rem;
+            position: absolute;
+            left: -2rem;
+            top: -2.3rem;
           }
 
           .services_name {
@@ -700,12 +746,25 @@ body {
           .services_description {
             font-family: Poppins;
           }
+
+          .services_before {
+            position: absolute;
+            border-radius: 1rem;
+            bottom: 1px;
+            left: 50%;
+            width: 0;
+            height: 5px;
+            transform: translateX(-50%);
+            transition: width 0.4s ease;
+            align-self: start;
+          }
         }
       }
     }
 
     .xp-job {
       margin-top: 5rem;
+      padding-inline: 20%;
 
       .xp-job_content {
         display: flex;
@@ -773,6 +832,7 @@ body {
     .skills {
       margin-top: 5rem;
       transform: skew(1.5deg);
+      padding-inline: 20%;
 
       .skills_content {
         text-align: center;
@@ -829,11 +889,12 @@ body {
               padding: 0.7rem 0;
             }
 
-            [alt=tailwind] {
+            [alt="tailwind"] {
               margin-bottom: 2rem;
             }
 
-            [alt=mysql-icon], [alt=mongodb-icon] {
+            [alt="mysql-icon"],
+            [alt="mongodb-icon"] {
               height: 4rem;
             }
 
@@ -859,6 +920,7 @@ body {
   .portfolio {
     position: relative;
     margin-top: 5rem;
+    padding-inline: 20%;
 
     .portfolio_plus {
       margin: auto;
@@ -868,10 +930,14 @@ body {
     .portfolio_nav {
       display: flex;
       transform: skew(-2deg);
+      background-image: url("../img/bg_gota.png");
+      background-size: cover;
+      cursor: default;
 
       .portfolio_nav_items {
         font-size: 1.1rem;
         margin-right: 1rem;
+        cursor: pointer;
       }
     }
 
@@ -1011,6 +1077,7 @@ body {
   }
 
   .contact {
+    padding-inline: 20%;
     margin-top: 5rem;
     transform: skew(1.5deg);
 
@@ -1345,9 +1412,9 @@ body {
       top: -8rem;
       right: -24rem;
       transform: rotate(65deg);
-      top: -10rem;    
+      top: -10rem;
     }
-    .home_svg-bottom {  
+    .home_svg-bottom {
       bottom: -10rem;
       left: -21.9rem;
       transform: rotate(-210deg);
@@ -1379,6 +1446,7 @@ body {
 
     .parcours {
       .about {
+        padding-inline: 0;
         .about_content {
           flex-direction: column;
           transform: skew(0);
@@ -1434,28 +1502,62 @@ body {
         }
       }
 
-      .services .services_content .services_cards {
-        transform: skew(0);
-        margin: 1rem;
-        padding: 1rem;
-        width: max-content;
+      .services {
+        margin-inline: -2rem;
+        .services_title {
+          margin-left: 2rem;
+        }
+        .services_content .services_cards {
+          transform: skew(0);
+          margin: 1rem;
+          padding: 1rem;
+          width: max-content;
+
+          .services_name {
+            text-align: start;
+            margin-left: 3.5rem;
+          }
+
+          &:nth-child(1) {
+            .services_name {
+              text-align: start;
+              margin-top: -0.5rem;
+            }
+          }
+
+          &:nth-child(2) {
+            .services_icon-img {
+              left: unset;
+              right: -2rem;
+            }
+
+            .services_name {
+            text-align: end;
+            margin-right: 3.5rem;
+          }
+          }
+        }
       }
 
-      .xp-job .xp-job_content {
-        flex-direction: column;
+      .xp-job {
+        padding-inline: 0;
+        .xp-job_content {
+          flex-direction: column;
 
-        .xp-job_experiences {
-          width: 100%;
-          padding: 0;
+          .xp-job_experiences {
+            width: 100%;
+            padding: 0;
 
-          .xp-job_list .xp-job_cards {
-            transform: skew(0);
+            .xp-job_list .xp-job_cards {
+              transform: skew(0);
+            }
           }
         }
       }
 
       .skills {
         transform: skew(0);
+        padding-inline: 0;
         .skills_content {
           padding: 1rem;
 
@@ -1467,13 +1569,14 @@ body {
               font-size: 2rem;
             }
 
-            [alt=tailwind] {
+            [alt="tailwind"] {
               margin-bottom: 1rem;
             }
 
-            [alt=mysql-icon], [alt=mongodb-icon] {
+            [alt="mysql-icon"],
+            [alt="mongodb-icon"] {
               height: 3.5rem;
-              margin-top: .2rem;
+              margin-top: 0.2rem;
             }
 
             .sp {
@@ -1485,6 +1588,7 @@ body {
     }
 
     .portfolio {
+      padding-inline: 0;
       .portfolio_nav {
         transform: skew(0);
       }
@@ -1497,6 +1601,7 @@ body {
 
     .contact {
       transform: skew(0);
+      padding-inline: 0;
 
       .contact_title {
         margin-bottom: 3rem;
