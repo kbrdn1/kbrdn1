@@ -69,6 +69,7 @@ $(document).ready(function (event) {
     $(".parallax-slider").attr("src", "./assets/img/header_bg.jpg");
 
   $(".home").mousemove(function (e) {
+    if (width > 1024) {
       var width = $(this).width() / 2;
       xPos = e.clientX;
 
@@ -78,7 +79,7 @@ $(document).ready(function (event) {
       if (xPos > width) {
         $(".parallax-slider").attr("src", "./assets/img/header_bg3.png");
       }
-    
+    }
   });
 
   $(".home").mouseout(function (e) {
