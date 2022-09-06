@@ -1,10 +1,10 @@
 
 <p align="left">
-<img src="https://github.com/kbrdn1/kbrdn1/raw/main/assets/img/13.png" width="390" alt="header" align="right"/>
+<img src="https://github.com/kbrdn1/kbrdn1/raw/main/assets/img/animoji-1.png" width="360" alt="header" align="right"/>
 </p>
                                                                                                                      
-# <a href="https://kylian-bardini.fr"><img alt="logo" width="30px" src="https://kylian-bardini.fr/assets/img/Logo_K.svg" />ylian Bardini</a><a href="https://kylian-bardini.fr">
-<img src="https://img.shields.io/badge/-Website-ff8400" alt="Website"/></a>
+# <img alt="logo" width="30px" src="https://kylian-bardini.fr/assets/img/Logo_K-2.svg" />ylian Bardini</a><a href="https://kylian-bardini.fr">
+<img src="https://img.shields.io/badge/-Website-ff8400" alt="Website"/>
 <a href="https://codepen.io/kbrdn1">
 <img src="https://img.shields.io/badge/-Codepen-222222" alt="Codepen"/></a>
 <a href="https://twitter.com/kbrdn1">
