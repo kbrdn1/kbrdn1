@@ -3,12 +3,15 @@
 <img src="https://github.com/kbrdn1/kbrdn1/raw/main/assets/img/animoji-1.png" width="360" alt="header" align="right"/>
 </p>
                                                                                                                      
-# <img alt="logo" width="30px" src="https://kylian-bardini.fr/assets/img/Logo_K-2.svg" />ylian Bardini</a><a href="https://kylian-bardini.fr">
-<img src="https://img.shields.io/badge/-Website-ff8400" alt="Website"/>
+<h1 align="center"><img alt="logo" width="30px" src="https://kylian-bardini.fr/assets/img/Logo_K-2.svg" />ylian Bardini</h1>
+<p align="center">
+<a href="https://kylian-bardini.fr">
+<img src="https://img.shields.io/badge/-Website-ff8400" alt="Website"/></a>
 <a href="https://codepen.io/kbrdn1">
 <img src="https://img.shields.io/badge/-Codepen-222222" alt="Codepen"/></a>
 <a href="https://twitter.com/kbrdn1">
-<img src="https://img.shields.io/badge/-Twitter-00a6ff" alt="Twiter"/></a>                                                                                                        
+<img src="https://img.shields.io/badge/-Twitter-00a6ff" alt="Twiter"/></a>
+</p>
 <p align="left">
 Bonjour, je suis Kylian Bardini, Développeur Frontend/Backend Junior et
 UX/UI Designer basé à Longwy.
