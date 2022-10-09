@@ -5,336 +5,772 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="BARDINI Kylian">
+    <meta creator="BARDINI Kylian">
+    <meta publisher="BARDINI Kylian">
     <meta name="description"
         content="Bonjour, je suis Kylian Bardini, Développeur Frontend/Backend Junior et UX/UI Designer basé à Longwy.">
-    <link rel="shortcut icon" href="./assets/img/Logo_K.svg" type="image/x-icon">
-
+    <link rel="icon" href="./assets/img/Logo_K.svg" type="image/x-icon">
     <!--==================== FONT AWESOME ====================-->
-    <script src="https://kit.fontawesome.com/152fd9e69b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Kylian Bardini | Portfolio | Développeur Frontend/Backend Junior</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!--==================== JS ====================-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+
+    <title>Kylian Bardini | Développeur Fullstack Junior</title>
 </head>
 
-<body id="body">
-    <div class="curtain1"></div>
-    <div class="curtain2"></div>
-    <div class="cursor" id="cursor"></div>
-    <nav class="nav">
-        <div class="nav_logo">
-            <div class="nav_logo_content">
-                <a href="./assets/cv/CV_BARDINI_KYLIAN.pdf" target="_blank" target="blank" class="nav_logo_links">
-                    <div class="nav_logo-init"><img src="./assets/img/Logo_K.svg" alt="logo K" class="nav_logo_K"> ylian
-                        <span>Bardini</span></div>
-                    <div class="nav_logo-plus">Télécherger mon <span>CV</span></div>
-                </a>
+<body>
+    <!--==================== LOADER ====================-->
+    <div class="loader">
+        <div class="loader_content">
+            <div class="loader_img">
+                <img src="./assets/img/Logo_K.svg" alt="Logo Kylian Bardini">
+            </div>
+            <div class="loader_bar">
+                <div class="loader_bar_progress"></div>
             </div>
         </div>
-        <div class="hamb" state="close">
-            <div class="menu">
-                <span class="bar1"></span>
-                <span class="bar2"></span>
-                <span class="bar3"></span>
-            </div>
-        </div>
-
-        <ul class="nav_list">
-
-            <li class="nav_items">
-                <a href="#" class="nav_links">
-                    <div class="nav_links-init">
-                        <i class="fa-solid fa-house-chimney"></i>
-                    </div>
-                    <div class="nav_links-plus">
-                        <i class="fa-solid fa-house-chimney"></i>
-                    </div>
-                </a>
-            </li>
-
-            <li class="nav_items">
-                <a href="#parcours" class="nav_links">
-                    <div class="nav_links-init">Parcours</div>
-                    <div class="nav_links-plus">Parcours</div>
-                </a>
-            </li>
-
-            <li class="nav_items">
-                <a href="#portfolio" class="nav_links">
-                    <div class="nav_links-init">Portfolio</div>
-                    <div class="nav_links-plus">Portfolio</div>
-                </a>
-            </li>
-
-            <li class="nav_items">
-                <a href="#contact" class="nav_links nav_contact">
-                    <div class="nav_links-init">Contact</div>
-                    <div class="nav_links-plus">Contact</div>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <nav class="nav2">
-        <div class="nav_info">
-            <div class="nav_info-title">Email :</div>
-            <a class="nav_info-mail" href="mailto:contact-dev@kylian-bardini.fr">contact-dev@kylian-bardini.fr</a>
-        </div>
-
-        <div class="nav_social">
-            <div class="nav_social_content">
-                <div class="social-title">
-                    <p>Suivez Moi</p> <span>━━━</span>
-                </div>
-                <a href="https://github.com/kbrdn1" target="_blank" class="social-links">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/kylian-bardini-aa0528234/" target="_blank" class="social-links">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://codepen.io/kbrdn1" target="_blank" class="social-links">
-                    <i class="fa-brands fa-codepen"></i>
-                </a>
-                <a href="https://twitter.com/kbrdn1" target="_blank" class="social-links">
-                    <i class="fa-brands fa-twitter"></i>
-                </a>
-            </div>
-        </div>
-    </nav>
-    <header class="header" data-parallax="scroll" data-image-src="./assets/img/header_bg1.png">
-
-    </header>
-
-
-    <section class="home">
-        <div class="home_content">
-            <!--<img src="./assets/img/13.png" alt="svg" class="home_svg-top">
-            <img src="./assets/img/13.png" alt="svg" class="home_svg-bottom"> -->
-            <img src="./assets/img/Logo_K.svg" alt="Logo" class="home_logo">
-            <p class="home_text" id="hometxt">
-                <!-- Bonjour, je suis <span>Kylian Bardini</span>, Développeur Frontend/Backend Junior et <br>
-                UX/UI Designer basé à Longwy. -->
-            </p>
-        </div>
-    </section>
-
-    <div class="fixed-popup">
-        <a href="#contact">Contactez-moi</a>
-        <img src="./assets/img/mns_logo.png" alt="mns-logo">
     </div>
 
-    <main class="main">
-        <section class="parcours" id="parcours">
-            <div class="about">
-                <h2 class="about_title title">A propos</h2>
+    <!--==================== HEADER ====================-->
 
-                <div class="about_content">
-                    <div class="about_me container">
-                        <div class="about_portrait">
-                            <img src="./assets/img/Moi.png" alt="me" class="about_img">
-                        </div>
-
-                        <div class="about_text">
-                            <p class="about_description">
-                                Bonjour, je suis <span>Kylian Bardini</span>, Développeur Frontend/Backend Junior et
-                                UX/UI Designer basé à Longwy.<br> <br>
-                                Je suis passionné par la conception informatique. Mon amour du
-                                développement et du graphisme me permet d'être polyvalent et adaptable aux tâches qui me
-                                sont confiées. Mon objectif est d'améliorer le Web en concevant de superbes expériences.
-                            </p>
-
-                            <div class="about_infos">
-                                <div class="about_items">
-                                    <span>Residence: </span>France
-                                </div>
-
-                                <div class="about_items">
-                                    <span>Adresse: </span>Rouvrois/Othain - 55230
-                                </div>
-
-                                <div class="about_items">
-                                    <span>E-mail: </span>contact-dev@kylian-bardini.fr
-                                </div>
-                            </div>
-
-                            <div class="about_cv">
-                                <a href="./assets/cv/CV_BARDINI_KYLIAN.pdf" target="_blank">
-                                    <div class="btn" btn="cv">Télécharger mon CV
-                                        <div class="before"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+    <header class="header" id="header">
+        <!--==================== NAV ====================-->
+        <nav class="nav">
+            <a href="#header" class="nav_title">
+                <img src="./assets/img/Logo_K.svg" alt="Logo_nav"> Kylian <span>Bardini</span>
+            </a>
+            <ul class="nav_list">
+                <a href="#about">
+                    <li class="nav_item" data-scroll="about">
+                        A propos
+                    </li>
+                </a>
+                <a href="#skills">
+                    <li class="nav_item" data-scroll="skills">
+                        Compétences
+                    </li>
+                </a>
+                <a href="#projects">
+                    <li class="nav_item" data-scroll="projects">
+                        Projets
+                    </li>
+                </a>
+                <div class="nav_indicator"></div>
+            </ul>
+            <!--==================== NAV OPTIONS ====================-->
+            <div class="nav_options">
+                <a href="#contact" class="btn">
+                    <div class="btn-content">
+                        <p class="front-txt">Engagez-moi</p>
+                        <p class="back-txt">Engagez-moi</p>
                     </div>
-                    <div class="about_mns container">
-                        <a href="https://www.metz-numeric-school.fr/fr" target="_blank" rel="noopener noreferrer">
-                            <img src="./assets/img/mns_logo.png" alt="mns-logo" class="mns_logo">
+                </a>
+                <div class="options" status="close">
+                    <div class="options_icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+
+                    <ul class="options_list">
+                        <a href="">
+                            <li class="options_item">
+                                <img src="./assets/img/gb.svg" alt="en" class="flag">&nbsp;English
+                            </li>
                         </a>
-                        <div class="mns_text">
-                            <p>Actuellement à la recherche
-                                d'une&nbsp;<span>alternance</span>&nbsp;sur&nbsp;<span>Metz</span>&nbsp;pour
-                                un&nbsp;<span>BAC+3
-                                    Bachelor Développeur Fullstack</span>.</p>
-                            <div class="mns_contact">
-                                <a href="#contact">
-                                    <div class="btn" btn="mnscontact">Me contacter
-                                        <div class="before"></div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                    </ul>
+                </div>
+                <div class="menu" status="close">
+                    <div class="menu_icon">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
                     </div>
                 </div>
             </div>
+        </nav>
+        <!--==================== HEADER PICTURE ====================-->
+        <div class="header_picture">
+            <picture>
+                <img class="Logo" src="./assets/img/Logo_K.svg" alt="Logo">
+                <img class="animoji" src="./assets/img/animoji-6.png" alt="animoji">
+            </picture>
+        </div>
 
-            <div class="services">
-                <h2 class="services_title title">Services</h2>
-
-                <div class="services_content" id="services">
-                </div>
+        <!--==================== HEADER CONTENT ====================-->
+        <div class="header_content">
+            <!--==================== HEADER TEXT ====================-->
+            <div class="header_text">
+                <h1>Développeur Fullstack Junior</h1>
+                <h2>
+                    Bonjour, Je suis Kylian Bardini, Développeur Fullstack<br> Junior et UX/UI Designer basé à Longwy.
+                </h2>
             </div>
 
-            <div class="xp-job">
-                <div class="xp-job_content">
-                    <div class="xp-job_experiences">
-                        <h3 class="xp-job_subtitle subtitle">Diplômes</h3>
-
-                        <div class="xp-job_list" id="diplomes">
-                        </div>
-                    </div>
-
-                    <div class="xp-job_experiences">
-                        <h3 class="xp-job_subtitle subtitle">Expériences</h3>
-
-                        <div class="xp-job_list" id="job">
-                        </div>
-                    </div>
-                </div>
+            <div class="header_social">
+                <a href="https://www.linkedin.com/in/kylian-bardini-1b1b1b1b1/" target="_blank" class="social_link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/kbrdn1" target="_blank" class="social_link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com/kbrdn1" target="_blank" class="social_link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://codepen.io/kbrdn1" target="_blank" class="social_link">
+                    <i class="fab fa-codepen"></i>
+                </a>
             </div>
 
-            <div class="skills">
-                <h2 class="skills_title title">Compétences</h2>
-
-                <div class="skills_content container">
-                    <!--<h3 class="skills_subtitle subtitle">Programmation</h3>
-
-                    <div class="skills_list" id="skills_list1">
-                    </div>
-
-                    <h3 class="skills_subtitle subtitle">Conception graphique</h3>
-
-                    <div class="skills_list" id="skills_list2">
-                    </div>-->           
-
-                    <div class="skills_list">
-                        <h3 class="skills_subtitle subtitle">Frontend</h3>
-                        <div class="skills_items" id="skills_list1"></div>
-                    </div>
-
-                    <div class="skills_list">
-                        <h3 class="skills_subtitle subtitle">Backend</h3>
-                        <div class="skills_items" id="skills_list2"></div>
-                    </div>
-
-                    <div class="skills_list">
-                        <h3 class="skills_subtitle subtitle">Conception graphique</h3>
-                        <div class="skills_items" id="skills_list3"></div>
-                    </div>
+            <a href="#contact" class="btn btn-header">
+                <div class="btn-content">
+                    <p class="front-txt">Engagez-moi</p>
+                    <p class="back-txt">Engagez-moi</p>
+                </div>
+            </a>
+        </div>
+        <!--==================== MNS ====================-->
+        <section class="mns" id="mns">
+            <div class="mns_content">
+                <a href="https://www.metz-numeric-school.fr/fr" target="_blank" class="mns_picture">
+                    <img class="mns_logo" src="./assets/img/logo-mns.svg" alt="mns-logo">
+                    <div class="mns_logo-text">Metz Numeric School</div>
+                </a>
+                <div class="mns_text">
+                    <p>
+                        Actuellement à la recherche d'une <span>alternance</span> sur <span>Metz</span> pour un
+                        <span>BAC+3
+                            Bachelor
+                            Développeur Fullstack</span>.
+                    </p>
                 </div>
             </div>
-
-            <!--<div class="lifestyle">
-                <h2 class="lifestyle_title title">Centre d'intéret</h2>
-
-                <div class="lifestyle_content container">
-
-                </div>
-            </div>-->
-        </section>
-
-        <section class="portfolio" id="portfolio">
-            <h2 class="portfolio_title title">Portfolio</h2>
-
-            <nav class="portfolio_nav container">
-                <div class="portfolio_nav_items active" type="all">All</div>
-
-                <div class="portfolio_nav_items" type="site">Site Web</div>
-
-                <div class="portfolio_nav_items" type="image">Image</div>
-            </nav>
-
-            <div class="portfolio_list" id="portfolio_list">
-
-            </div>
-
-            <a href="https://github.com/kbrdn1?tab=repositories" target="_blank">
-                <div class="portfolio_plus btn" btn="portfolio-plus">
-                    Voir plus de projets
-                    <div class="before"></div>
+            <a href="./assets/files/CV_BARDINI_KYLIAN.pdf" target="_blank" class="btn btn-header">
+                <div class="btn-content">
+                    <p class="front-txt">Voir mon CV</p>
+                    <p class="back-txt">Voir mon CV</p>
                 </div>
             </a>
         </section>
+    </header>
 
-        <section class="contact" id="contact">
-            <h2 class="contact_title title">Contactez-moi</h2>
-
-            <div class="contact_subtitle subtitle container">Envie de me présenter un projet, ou tout simplement dire
-                bonjour ?
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about_title title">
+                <h2>“Work smarter than faster.”</h2>
+                <h3>J'aime travailler intélligemment et comprendre toutes les étapes d'un projet afin de l'optimisé.
+                </h3>
             </div>
+            <div class="about_content">
+                <!--==================== ABOUT MEDIA ====================-->
+                <div class="about_left">
 
-            <form action="https://formsubmit.co/2362a66f2fa464553dc4d99e4cbe0def" class="contact_form container"
-                method="POST">
-                <input name="name" type="text" class="contact_input" placeholder="Nom" required>
-                <input name="email" type="email" class="contact_input" placeholder="Email" required>
-                <textarea name="message" type="text" class="contact_input" placeholder="Message" cols="0" rows="3"
-                    required></textarea>
-                <input type="hidden" name="_next" value="https://kylian-bardini.fr">
-                <button type="submit" class="btn" btn="contact">Envoyer
-                    <div class="before"></div>
-                </button>
-            </form>
-
-            <div class="contact_mns container">
-                <a href="https://www.metz-numeric-school.fr/fr" rel="noopener noreferrer">
-                    <img src="./assets/img/mns_logo.png" alt="mns-logo" class="mns_logo">
-                </a>
-                <div class="mns_text">
-                    <p>Actuellement à la recherche
-                        d'une&nbsp;<span>alternance</span>&nbsp;sur&nbsp;<span>Metz</span>&nbsp;pour
-                        un&nbsp;<span>BAC+3
-                            Bachelor Développeur Fullstack</span>.</p>
-                    <div class="mns_about">
-                        <a href="#parcours">
-                            <div class="btn" btn="mnscontact"> A propos
-                                <div class="before"></div>
-                            </div>
+                    <ul class="about_list">
+                        <h4>Réseaux: </h4>
+                        <a href="./assets/files/CV_BARDINI_KYLIAN.pdf" target="_blank">
+                            <li class="about_item cv">
+                                <p>Télécharger mon CV</p>
+                            </li>
                         </a>
+
+                        <a href="https://www.linkedin.com/in/kylian-bardini-1b1b1b1b1/" target="_blank">
+                            <li class="about_item linkedin">
+                                <p>Linkedin</p>
+                                <i class="fab fa-linkedin"></i>
+                            </li>
+                        </a>
+
+                        <a href="https://github.com/kbrdn1" target="_blank">
+                            <li class="about_item github">
+                                <p>Github</p>
+                                <i class="fab fa-github"></i>
+                            </li>
+                        </a>
+
+                        <a href="https://twitter.com/kbrdn1" target="_blank">
+                            <li class="about_item twitter">
+                                <p>Twitter</p>
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                        </a>
+
+                        <a href="https://codepen.io/kbrdn1" target="_blank">
+                            <li class="about_item codepen">
+                                <p>Codepen</p>
+                                <i class="fab fa-codepen"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <!--==================== ABOUT TEXT ====================-->
+                <div class="about_right">
+                    <div class="about_text">
+                        <p class="about_me">
+                            Je suis passionné par la conception informatique. Ma passion du développement et du
+                            graphisme
+                            me
+                            permet d'être polyvalent et adaptable aux tâches qui me sont confiées. Mon objectif est
+                            d'améliorer
+                            le Web en concevant de superbes expériences.
+                        </p>
+                    </div>
+                    <!--==================== ABOUT INFOS ====================-->
+                    <div class="about_infos">
+                        <div class="about_map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41564.01449876416!2d5.631016777804638!3d49.375786077654254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47eadca0ab216d5b%3A0xe1f874bcc3e5a5c6!2s55230%20Rouvrois-sur-Othain!5e0!3m2!1sfr!2sfr!4v1665071670892!5m2!1sfr!2sfr"
+                                width="100%" height="100%" style="border: 0; border-radius: 1rem;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="about_contact">
+                            <a href="mailto: contact-dev@kylian-bardini.fr" class="btn about_mail">
+                                <div class="btn-content">
+                                    <p class="front-txt">contact-dev@kylian-bardini.fr</p>
+                                    <p class="back-txt">contact-dev@kylian-bardini.fr</p>
+                                </div>
+                            </a>
+                            <a href="#contact" class="btn contact-btn">
+                                <div class="btn-content">
+                                    <p class="front-txt">Contactez-moi</p>
+                                    <p class="back-txt">Contactez-moi</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <div class="skills_title title">
+                <h2>“You reap what you sow”</h2>
+                <h3>Efforts, temps et concentration, mènent à la réussite !</h3>
+            </div>
+            <div class="skills_content">
+                <!--==================== SKILLS FRONTEND ====================-->
+                <div class="btn skills_container frontend">
+                    <div class="skills_type">
+                        <h4>Frontend</h4>
+                    </div>
+                    <ul class="skills_list">
+                        <li class="skills_item">
+                            HTML
+                        </li>
+                        <li class="skills_item">
+                            CSS
+                        </li>
+                        <li class="skills_item">
+                            Javascript
+                        </li>
+                        <li class="skills_item">
+                            ReactJS
+                        </li>
+                        <li class="skills_item">
+                            Bootstrap
+                        </li>
+                        <li class="skills_item">
+                            Tailwind
+                        </li>
+                        <li class="skills_item">
+                            jQuery
+                        </li>
+                        <li class="skills_item">
+                            SASS
+                        </li>
+                        <li class="skills_item">
+                            GSAP
+                        </li>
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </ul>
+                </div>
+                <!--==================== SKILLS BACKEND ====================-->
+                <div class="btn skills_container backend">
+                    <div class="skills_type">
+                        <h4>Backend</h4>
+                    </div>
+                    <ul class="skills_list">
+                        <li class="skills_item">
+                            NodesJS
+                        </li>
+                        <li class="skills_item">
+                            MySQL
+                        </li>
+
+                        <li class="skills_item">
+                            Symfony
+                        </li>
+                        <li class="skills_item">
+                            MongoDB
+                        </li>
+                        <li class="skills_item">
+                            PHP
+                        </li>
+                        <li class="skills_item">
+                            GIT
+                        </li>
+                        <i class="fa-solid fa-cubes"></i>
+                    </ul>
+                </div>
+                <!--==================== SKILLS DESIGN ====================-->
+                <div class="btn skills_container design">
+                    <div class="skills_type">
+                        <h4>Design</h4>
+                    </div>
+                    <ul class="skills_list">
+                        <li class="skills_item">
+                            Photoshop
+                        </li>
+
+                        <li class="skills_item">
+                            Illustrator
+                        </li>
+
+                        <li class="skills_item">
+                            InDesign
+                        </li>
+
+                        <li class="skills_item">
+                            XD
+                        </li>
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </ul>
+                </div>
+            </div>
+            <!--==================== ABOUT INPROGRESS ====================-->
+            <div class="btn skills_inprogress">
+                <div class="skills_inprogress_title">
+                    <h4>En cours d'apprentissage</h4>
+                </div>
+                <ul class="skills_inprogress_list">
+                    <li class="skills_inprogress_item">
+                        C
+                    </li>
+                    <li class="skills_inprogress_item">
+                        React Native
+                    </li>
+                    <li class="skills_inprogress_item">
+                        ThreeJS
+                    </li>
+                    <li class="skills_inprogress_item">
+                        Blender
+                    </li>
+                    <i class="fa-solid fa-list-check"></i>
+                </ul>
+            </div>
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+            <div class="projects_title title">
+                <h2>“Practice makes perfect”</h2>
+                <h3>Voici quelques projets que j'ai réalisé.</h3>
+            </div>
+            <div class="projects_content">
+                <!--==================== PROJECTS NAV ====================-->
+                <div class="projects_nav">
+                    <div class="projects_nav_item active" data-filter="all">
+                        <h4>Tout</h4>
+                    </div>
+                    <div class="projects_nav_item" data-filter="web">
+                        <h4>Web</h4>
+                    </div>
+                    <div class="projects_nav_item" data-filter="design">
+                        <h4>Design</h4>
+                    </div>
+                    <div class="projects_select"></div>
+                </div>
+                <!--==================== PROJECTS CARDS ====================-->
+                <ul class="projects_list">
+                    <li class="projects_item" data-category="web" data-modal="MyHackount">
+                        <div class="projects_card">
+                            <div class="projects_card_picture">
+                                <img src="assets/img/MyHackount.png" alt="MyHackount">
+                            </div>
+                            <div class="projects_card_title">
+                                <h5>MyHackount</h5>
+                                <h6>Web</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="projects_item" data-category="web" data-modal="HG-dev">
+                        <div class="projects_card">
+                            <div class="projects_card_picture">
+                                <img src="assets/img/project_H&G.png" alt="HouseGarden">
+                            </div>
+                            <div class="projects_card_title">
+                                <h5>House & Garden</h5>
+                                <h6>Web</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="projects_item" data-category="web" data-modal="ReactWorld">
+                        <div class="projects_card">
+                            <div class="projects_card_picture">
+                                <img src="assets/img/reactworld.jpg" alt="ReactWorld">
+                            </div>
+                            <div class="projects_card_title">
+                                <h5>ReactWorld</h5>
+                                <h6>Web</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="projects_item" data-category="design" data-modal="HG-branding">
+                        <div class="projects_card">
+                            <div class="projects_card_picture">
+                                <img src="assets/img/HGimg.png" alt="ReactWorld">
+                            </div>
+                            <div class="projects_card_title">
+                                <h5>House & Garden</h5>
+                                <h6>Design</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="projects_item" data-category="web" data-modal="MVC">
+                        <div class="projects_card">
+                            <div class="projects_card_picture">
+                                <img src="assets/img/portfolio3.jpg" alt="CRUD MVC">
+                            </div>
+                            <div class="projects_card_title">
+                                <h5>CRUD MVC</h5>
+                                <h6>Web</h6>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="projects_item" data-category="web" data-modal="CRUD">
+                        <div class="projects_card">
+                            <div class="projects_card_picture">
+                                <img src="assets/img/portfolio2.jpg" alt="CRUD PHP">
+                            </div>
+                            <div class="projects_card_title">
+                                <h5>CRUD PHP</h5>
+                                <h6>Web</h6>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <a href="https://github.com/kbrdn1?tab=repositories" target="_blank" class="btn projects_more">
+                    <div class="btn-content">
+                        <p class="front-txt">Voir plus de projets</p>
+                        <p class="back-txt">Voir plus de projets</p>
+                    </div>
+                </a>
+            </div>
+            <div class="fade"></div>
+
+            <!--==================== PROJECTS MODALS ====================-->
+            <div class="projects_modals-bg">
+                <div class="projects_modal" data-project="MyHackount">
+                    <div class="modal_exit">
+                        <img src="./assets/img/x.svg" alt="exit">
+                    </div>
+                    <div class="modal_picture">
+                        <img src="./assets/img/MyHackount.png" alt="MyHackount">
+                    </div>
+                    <div class="modal_title">
+                        <h5>Web</h5>
+                        <h4>MyHackount</h4>
+                    </div>
+                    <div class="modal_content">
+                        <p>Projet MERN. Il s'agit d'un réseau social réaliser avec Nodes.js pour créer une API avec
+                            MongoDB et Express puis React.js afin de créer l'interface de l'application.</p>
+                        <h6>Construit avec:</h6>
+                        <ul class="modal_list">
+                            <li class="modal_item">
+                                NodesJS
+                            </li>
+                            <li class="modal_item">
+                                MongoDB
+                            </li>
+                            <li class="modal_item">
+                                Express
+                            </li>
+                            <li class="modal_item">
+                                ReactJS
+                            </li>
+                            <li class="modal_item">
+                                SASS
+                            </li>
+                            <li class="modal_item">
+                                Redux
+                            </li>
+                            <li class="modal_item">
+                                NPM
+                            </li>
+                        </ul>
+                        <a href="https://github.com/kbrdn1/MyHackount-MERN-Project" target="_blank" class="btn">
+                            <div class="btn-content">
+                                <p class="front-txt">Voir le projet</p>
+                                <p class="back-txt">Voir le projet</p>
+                            </div>
+                        </a>
+                    </div>
+                    <img class="pager" src="./assets/img/pager-solid.svg" alt="pager">
+                </div>
+
+                <div class="projects_modal" data-project="HG-dev">
+                    <div class="modal_exit">
+                        <img src="./assets/img/x.svg" alt="exit">
+                    </div>
+                    <div class="modal_picture">
+                        <img src="./assets/img/project_H&G.png" alt="House & Garden">
+                    </div>
+                    <div class="modal_title">
+                        <h5>Web</h5>
+                        <h4>House & Garden</h4>
+                    </div>
+                    <div class="modal_content">
+                        <p>Site internet pour un paysagiste, avec demande de devis et espace administrateur.</p>
+                        <h6>Construit avec:</h6>
+                        <ul class="modal_list">
+                            <li class="modal_item">
+                                HTML
+                            </li>
+                            <li class="modal_item">
+                                CSS
+                            </li>
+                            <li class="modal_item">
+                                Javascript
+                            </li>
+                            <li class="modal_item">
+                                Symfony
+                            </li>
+                            <li class="modal_item">
+                                Twig
+                            </li>
+                            <li class="modal_item">
+                                Doctrine
+                            </li>
+                            <li class="modal_item">
+                                MySQL
+                            </li>
+                        </ul>
+                        <a href="https://github.com/kbrdn1/House-and-Garden" target="_blank" class="btn">
+                            <div class="btn-content">
+                                <p class="front-txt">Voir le projet</p>
+                                <p class="back-txt">Voir le projet</p>
+                            </div>
+                        </a>
+                    </div>
+                    <img class="pager" src="./assets/img/pager-solid.svg" alt="pager">
+                </div>
+
+                <div class="projects_modal" data-project="ReactWorld">
+                    <div class="modal_exit">
+                        <img src="./assets/img/x.svg" alt="exit">
+                    </div>
+                    <div class="modal_picture">
+                        <img src="./assets/img/reactworld.jpg" alt="ReactWorld">
+                    </div>
+                    <div class="modal_title">
+                        <h5>Web</h5>
+                        <h4>ReactWorld</h4>
+                    </div>
+                    <div class="modal_content">
+                        <p>Site contenant différentes information sur les pays du monde via une API.</p>
+                        <h6>Construit avec:</h6>
+                        <ul class="modal_list">
+                            <li class="modal_item">
+                                ReactJS
+                            </li>
+                            <li class="modal_item">
+                                SASS
+                            </li>
+                            <li class="modal_item">
+                                restcountries API
+                            </li>
+                        </ul>
+                        <a href="https://github.com/kbrdn1/React-World" target="_blank" class="btn">
+                            <div class="btn-content">
+                                <p class="front-txt">Voir le projet</p>
+                                <p class="back-txt">Voir le projet</p>
+                            </div>
+                        </a>
+                    </div>
+                    <img class="pager" src="./assets/img/pager-solid.svg" alt="pager">
+                </div>
+
+                <div class="projects_modal" data-project="HG-branding">
+                    <div class="modal_exit">
+                        <img src="./assets/img/x.svg" alt="exit">
+                    </div>
+                    <div class="modal_picture">
+                        <img src="./assets/img/HGimg.png" alt="House & Garden">
+                    </div>
+                    <div class="modal_title">
+                        <h5>Design</h5>
+                        <h4>House & Garden</h4>
+                    </div>
+                    <div class="modal_content">
+                        <p>Chartre graphique pour la société House and Garden.</p>
+                        <h6>Construit avec:</h6>
+                        <ul class="modal_list">
+                            <li class="modal_item">
+                                Photoshop
+                            </li>
+                            <li class="modal_item">
+                                Illustrator
+                            </li>
+                            <li class="modal_item">
+                                InDesign
+                            </li>
+                        </ul>
+                        <a href="./assets/files/Charte_graphique_H&G.pdf" target="_blank" class="btn">
+                            <div class="btn-content">
+                                <p class="front-txt">Voir le projet</p>
+                                <p class="back-txt">Voir le projet</p>
+                            </div>
+                        </a>
+                    </div>
+                    <img class="pager" src="./assets/img/pager-solid.svg" alt="pager">
+                </div>
+
+                <div class="projects_modal" data-project="MVC">
+                    <div class="modal_exit">
+                        <img src="./assets/img/x.svg" alt="exit">
+                    </div>
+                    <div class="modal_picture">
+                        <img src="./assets/img/portfolio3.jpg" alt="MVC">
+                    </div>
+                    <div class="modal_title">
+                        <h5>Web</h5>
+                        <h4>CRUD MVC</h4>
+                    </div>
+                    <div class="modal_content">
+                        <p>Réalisation d'un CRUD avec le modèle d'architecture MVC.</p>
+                        <h6>Construit avec:</h6>
+                        <ul class="modal_list">
+                            <li class="modal_item">
+                                HTML
+                            </li>
+                            <li class="modal_item">
+                                CSS
+                            </li>
+                            <li class="modal_item">
+                                PHP
+                            </li>
+                            <li class="modal_item">
+                                MySQL
+                            </li>
+                            <li class="modal_item">
+                                Bootstrap
+                            </li>
+                        </ul>
+                        <a href="https://github.com/kbrdn1/crud-mvc" target="_blank" class="btn">
+                            <div class="btn-content">
+                                <p class="front-txt">Voir le projet</p>
+                                <p class="back-txt">Voir le projet</p>
+                            </div>
+                        </a>
+                    </div>
+                    <img class="pager" src="./assets/img/pager-solid.svg" alt="pager">
+                </div>
+
+                <div class="projects_modal" data-project="CRUD">
+                    <div class="modal_exit">
+                        <img src="./assets/img/x.svg" alt="exit">
+                    </div>
+                    <div class="modal_picture">
+                        <img src="./assets/img/portfolio2.jpg" alt="CRUD">
+                    </div>
+                    <div class="modal_title">
+                        <h5>Web</h5>
+                        <h4>CRUD PHP</h4>
+                    </div>
+                    <div class="modal_content">
+                        <p>Réalisation d'un CRUD en PHP.</p>
+                        <h6>Construit avec:</h6>
+                        <ul class="modal_list">
+                            <li class="modal_item">
+                                HTML
+                            </li>
+                            <li class="modal_item">
+                                CSS
+                            </li>
+                            <li class="modal_item">
+                                PHP
+                            </li>
+                            <li class="modal_item">
+                                MySQL
+                            </li>
+                        </ul>
+                        <a href="https://github.com/kbrdn1/Crud-PHP" target="_blank" class="btn">
+                            <div class="btn-content">
+                                <p class="front-txt">Voir le projet</p>
+                                <p class="back-txt">Voir le projet</p>
+                            </div>
+                        </a>
+                    </div>
+                    <img class="pager" src="./assets/img/pager-solid.svg" alt="pager">
+                </div>
+            </div>
+        </section>
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <div class="contact_title title">
+                <h2>“The best way to predict the future is to create it”</h2>
+                <h3>Vous avez un projet ? Contactez-moi !</h3>
+            </div>
+            <div class="contact_content">
+                <!--==================== CONTACT FORM ====================-->
+                <div class="contact_form">
+                    <div class="contact_form_title">
+                        <h4>Formulaire de contact</h4>
+                    </div>
+                    <form action="https://formsubmit.co/2362a66f2fa464553dc4d99e4cbe0def" method="POST">
+                        <label for="name">Nom <span>*</span></label>
+                        <input name="name" type="text" class="contact_input" placeholder="Nom" required>
+                        <label for="email">Adresse email <span>*</span></label>
+                        <input name="email" type="email" class="contact_input" placeholder="Email" required>
+                        <label for="message">Message <span>*</span></label>
+                        <textarea name="message" type="text" class="contact_input" placeholder="Message" cols="0"
+                            rows="3" required></textarea>
+                        <input type="hidden" name="_next" value="https://kylian-bardini.fr/#contact">
+                        <button type="submit" class="btn">
+                            <div class="btn-content">
+                                <p class="front-txt">Envoyer</p>
+                                <p class="back-txt">Envoyer</p>
+                            </div>
+                        </button>
+                        </button>
+                    </form>
+                </div>
+                <!--==================== CONTACT INFOS ====================-->
+                <div class="contact_info">
+                    <div class="contact_info_title">
+                        <h4>Informations de contact</h4>
+                    </div>
+
+                    <div class="contact_info_picture">
+                        <picture>
+                            <img class="Logo" src="./assets/img/Logo_K.svg" alt="Logo">
+                            <img class="animoji" src="./assets/img/animoji-6.png" alt="animoji">
+                        </picture>
+                    </div>
+
+                    <div class="contact_info_text">
+                        <h5>Kylian <span>BARDINI</span></h5>
+                        <h6>Développeur Fullstack Junior</h6>
+                        <p>2 Route Nationale<br>55230 Rouvrois-sur-Othain</p>
+                        <p>Mail: <a href="mailto:contact-dev@kylian-bardini.fr">contact-dev@kylian-bardini.fr</a></p>
+                    </div>
+                </div>
+                <div class="fade"></div>
         </section>
     </main>
-    <div class="bg-modal"></div>
 
-    <footer class="footer container">
-        <p class="footer_content">&#169; <span id="currentYear"></span> Kylian BARDINI</p>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
     </footer>
-
-    <!--==================== JQUERY JS ====================-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <!--==================== PARALLAX JS ====================-->
-    <script src="./assets/js/parallax.min.js"></script>
-
-    <!--==================== MAIN JS ====================-->
-    <script src="./assets/js/services.js"></script>
-    <script src="./assets/js/xp-job.js"></script>
-    <script src="./assets/js/skills.js"></script>
-    <script src="./assets/js/projects.js"></script>
-    <script src="./assets/js/main.js"></script>
-
 </body>
 
 </html>
