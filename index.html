@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 
     <!--==================== JS ====================-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./assets/js/contact.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
     <script src="./assets/js/main.js" defer></script>
@@ -754,22 +756,24 @@
                     <div class="contact_form_title">
                         <h4>Formulaire de contact</h4>
                     </div>
-                    <form action="https://formsubmit.co/2362a66f2fa464553dc4d99e4cbe0def" method="POST">
+                    <form id="contact-form">
                         <label for="name">Nom <span>*</span></label>
-                        <input name="name" type="text" class="contact_input" placeholder="Nom" required>
+                        <input id="name" name="name" type="text" class="contact_input" placeholder="Nom" required>
                         <label for="email">Adresse email <span>*</span></label>
-                        <input name="email" type="email" class="contact_input" placeholder="Email" required>
+                        <input id="email" name="email" type="email" class="contact_input" placeholder="Email" required>
                         <label for="message">Message <span>*</span></label>
-                        <textarea name="message" type="text" class="contact_input" placeholder="Message" cols="0"
-                            rows="3" required></textarea>
+                        <textarea id="message" name="message" type="text" class="contact_input" placeholder="Message"
+                            cols="0" rows="3" required></textarea>
                         <input type="hidden" name="_next" value="https://kylian-bardini.fr/#contact">
-                        <button type="submit" class="btn">
-                            <div class="btn-content">
-                                <p class="front-txt">Envoyer</p>
-                                <p class="back-txt">Envoyer</p>
-                            </div>
-                        </button>
-                        </button>
+                        <div class="send">
+                            <button type="submit" class="btn">
+                                <div class="btn-content">
+                                    <p class="front-txt">Envoyer</p>
+                                    <p class="back-txt">Envoyer</p>
+                                </div>
+                            </button>
+                            <div class="form_response active"></div>
+                        </div>
                     </form>
                 </div>
                 <!--==================== CONTACT INFOS ====================-->

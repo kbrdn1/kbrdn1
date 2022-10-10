@@ -305,7 +305,7 @@ ul {
 .alert_language_version .alert_content .alert_lang a img {
   height: 1rem;
   margin-right: 0.5rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 /*========== HEADER ==========*/
@@ -1705,9 +1705,57 @@ header .header_content .header_social .social_link:hover {
 }
 
 .contact .contact_content .contact_form form .btn {
-  margin-inline: 0;
+  margin-inline: 0 1rem;
   font-size: 1.5rem;
   border-radius: 0.7rem;
+}
+
+.contact .contact_content .contact_form form .send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .contact_content .contact_form form .send .form_response {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  font-family: "GT Walsheim Pro Regular", sans-serif;
+  -webkit-transition: all 0.6s cubic-bezier(0.2, 0.885, 0.32, 1.275);
+  transition: all 0.6s cubic-bezier(0.2, 0.885, 0.32, 1.275);
+  color: transparent;
+}
+
+.contact .contact_content .contact_form form .send .form_response.active {
+  width: 100%;
+  opacity: 1;
+}
+
+.contact .contact_content .contact_form form .send .form_response.error {
+  background: linear-gradient(301deg, red 0%, #ff00dd 100%);
+  color: white;
+}
+
+.contact .contact_content .contact_form form .send .form_response.success {
+  background: linear-gradient(301deg, lime 0%, cyan 100%);
+  color: white;
 }
 
 .contact .contact_content .contact_info {
