@@ -2,7 +2,7 @@
   emailjs.init("EKQjYo9huW7d4Cmbs");
 })();
 
-window.onload = function () {
+function emailJS () {
   document
     .getElementById("contact-form")
     .addEventListener("submit", function (event) {
