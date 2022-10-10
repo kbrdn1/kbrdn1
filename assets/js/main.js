@@ -195,4 +195,9 @@ $(document).ready(function () {
       $(".loader").fadeOut(500);
     }, time);
   });
+
+  //Alert Language hide after 8s
+  setTimeout(function () {
+    $(".alert_language_version").fadeOut(1500);
+  }, 8000);
 });

@@ -257,6 +257,57 @@ ul {
 }
 
 /*========== STYLES ==========*/
+/*========== ALERT LANG ==========*/
+.alert_language_version {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #000000;
+  z-index: 999;
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  border-top: 3px solid transparent;
+  -o-border-image: linear-gradient(99deg, #f7931e 0%, #9900ff 100%);
+     border-image: linear-gradient(99deg, #f7931e 0%, #9900ff 100%);
+  border-image-slice: 1;
+}
+
+.alert_language_version .alert_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.alert_language_version .alert_content .alert_text {
+  font-size: 1.2rem;
+  font-family: "GT Walsheim Pro Regular", sans-serif;
+  color: #ffffff;
+  margin-right: 1rem;
+}
+
+.alert_language_version .alert_content .alert_lang a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: underline;
+}
+
+.alert_language_version .alert_content .alert_lang a img {
+  height: 1rem;
+  margin-right: 0.5rem;
+  border-radius: .25rem;
+}
+
 /*========== HEADER ==========*/
 header {
   display: -webkit-box;
@@ -459,7 +510,7 @@ header .nav .nav_options .options .options_list .options_item:hover {
 header .nav .nav_options .options .options_list .options_item .flag {
   width: 1.2rem;
   height: 1.2rem;
-  border-radius: 0.1rem;
+  border-radius: 0.25rem;
 }
 
 header .header_picture {

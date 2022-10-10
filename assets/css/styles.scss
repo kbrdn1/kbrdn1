@@ -245,6 +245,47 @@ ul {
 
 /*========== STYLES ==========*/
 
+/*========== ALERT LANG ==========*/
+
+.alert_language_version {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: $black;
+  z-index: 999;
+  transition: all 0.6s ease-out;
+  border-top: 3px solid transparent;
+  border-image: $l-gradient;
+  border-image-slice: 1;
+
+  .alert_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .alert_text {
+      font-size: 1.2rem;
+      font-family: $f-regular;
+      color: $white;
+      margin-right: 1rem;
+    }
+    .alert_lang {
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: underline;
+
+        img {
+          height: 1rem;
+          margin-right: 0.5rem;
+          border-radius: .25rem;
+        }
+      }
+    }
+  }
+}
+
 /*========== HEADER ==========*/
 
 header {
@@ -404,7 +445,7 @@ header {
             .flag {
               width: 1.2rem;
               height: 1.2rem;
-              border-radius: 0.1rem;
+              border-radius: 0.25rem;
             }
           }
         }
