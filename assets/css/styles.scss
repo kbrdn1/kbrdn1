@@ -1395,7 +1395,7 @@ header {
   .projects_modal {
     position: relative;
     display: none;
-    overflow: hidden;
+    overflow-x: hidden;
     border: 1px solid gray;
     z-index: 2;
 
@@ -1482,10 +1482,12 @@ header {
         brightness(97%) contrast(84%);
       opacity: 0.5;
       transition: all 0.6s $elastic;
+      z-index: -1;
     }
     .modal_content {
       width: 100%;
       padding: 2rem 1rem;
+      padding-top: 0;
 
       p {
         font-size: 1.2rem;
@@ -1502,8 +1504,11 @@ header {
         padding-left: 2rem;
         list-style-type: disc;
         font-size: 1.1rem;
+        display: flex;
+        flex-wrap: wrap;
         .modal_item {
           margin: 1rem 0;
+          width: 50%;
         }
       }
     }
@@ -1856,7 +1861,6 @@ header {
 /*========== UNDER 1000px ==========*/
 
 @media (max-width: 1000px) {
-
   .projects {
     .projects_content {
       .projects_nav {
@@ -1943,7 +1947,7 @@ header {
         .about_infos {
           width: 100%;
           flex-direction: column;
-          .about_map{
+          .about_map {
             width: 100%;
             margin-bottom: 1rem;
           }
@@ -1966,16 +1970,31 @@ header {
         width: 100%;
 
         i {
-          bottom: -1.5rem;
-          right: 10rem;
+          height: 10rem;
+          bottom: -2rem;
+          right: -2rem;
         }
 
         &:hover {
           i {
-            right: 10.5rem;
+            right: -1.5rem;
           }
         }
       }
+    }
+
+    .skills_inprogress {
+      i {
+          height: 10rem;
+          bottom: -2rem;
+          right: -2rem;
+        }
+
+        &:hover {
+          i {
+            right: -1.5rem;
+          }
+        }
     }
   }
 }

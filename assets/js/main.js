@@ -133,6 +133,7 @@ $(document).ready(function () {
 
     $(".projects_modals-bg").css("display", "block");
     modal.addClass("active");
+    $("body").css("overflow", "hidden");
   });
 
   //Projects modals close
@@ -140,6 +141,7 @@ $(document).ready(function () {
     e.preventDefault();
     $(".projects_modals-bg").css("display", "none");
     $(".projects_modal").removeClass("active");
+    $("body").css("overflow", "auto");
   });
 
   //Projects modals close on click outside
@@ -148,6 +150,7 @@ $(document).ready(function () {
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       $(".projects_modals-bg").css("display", "none");
       $(".projects_modal").removeClass("active");
+      $("body").css("overflow", "auto");
     }
   });
 

@@ -1438,7 +1438,7 @@ header .header_content .header_social .social_link:hover {
 .projects_modals-bg .projects_modal {
   position: relative;
   display: none;
-  overflow: hidden;
+  overflow-x: hidden;
   border: 1px solid gray;
   z-index: 2;
   width: 100%;
@@ -1535,11 +1535,13 @@ header .header_content .header_social .social_link:hover {
   opacity: 0.5;
   -webkit-transition: all 0.6s cubic-bezier(0.2, 0.885, 0.32, 1.275);
   transition: all 0.6s cubic-bezier(0.2, 0.885, 0.32, 1.275);
+  z-index: -1;
 }
 
 .projects_modals-bg .projects_modal .modal_content {
   width: 100%;
   padding: 2rem 1rem;
+  padding-top: 0;
 }
 
 .projects_modals-bg .projects_modal .modal_content p {
@@ -1557,10 +1559,16 @@ header .header_content .header_social .social_link:hover {
   padding-left: 2rem;
   list-style-type: disc;
   font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .projects_modals-bg .projects_modal .modal_content .modal_list .modal_item {
   margin: 1rem 0;
+  width: 50%;
 }
 
 /*========== CONTACT ==========*/
@@ -1998,11 +2006,20 @@ header .header_content .header_social .social_link:hover {
     width: 100%;
   }
   .skills .skills_content .design i {
-    bottom: -1.5rem;
-    right: 10rem;
+    height: 10rem;
+    bottom: -2rem;
+    right: -2rem;
   }
   .skills .skills_content .design:hover i {
-    right: 10.5rem;
+    right: -1.5rem;
+  }
+  .skills .skills_inprogress i {
+    height: 10rem;
+    bottom: -2rem;
+    right: -2rem;
+  }
+  .skills .skills_inprogress:hover i {
+    right: -1.5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

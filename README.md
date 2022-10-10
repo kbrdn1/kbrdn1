@@ -3,7 +3,7 @@
 <img src="https://github.com/kbrdn1/kbrdn1/raw/main/assets/img/animoji-1.png" width="360" alt="header" align="right"/>
 </p>
                                                                                                                      
-<h1 align="center"><img alt="logo" width="30px" src="https://kylian-bardini.fr/assets/img/Logo_K-2.svg" />ylian Bardini</h1>
+<h1 align="center"><img alt="logo" width="30px" src="https://kylian-bardini.fr/assets/img/Logo_K.svg" />ylian Bardini</h1>
 <p align="center">
 <a href="https://kylian-bardini.fr">
 <img src="https://img.shields.io/badge/-Website-ff8400" alt="Website"/></a>
@@ -32,7 +32,7 @@ UX/UI Designer basé à Longwy.
     </p>
 <br>
 
-<a href="www.kylian-bardini.fr"><img align="left" alt="logo" width="128px" src="https://kylian-bardini.fr/assets/img/mns_logo.png" /></a>
+<a href="www.kylian-bardini.fr"><img align="left" alt="logo" width="128px" src="https://kylian-bardini.fr/assets/img/logo-mns.svg" /></a>
 Actuellement à la recherche d'une alternance sur Metz pour un BAC+3 Bachelor Développeur Fullstack.
 
 
