@@ -13,7 +13,7 @@
 <img src="https://img.shields.io/badge/-Twitter-00a6ff" alt="Twiter"/></a>
 </p>
 <p align="left">
-Bonjour, je suis Kylian Bardini, Développeur Frontend/Backend Junior et
+Bonjour, je suis Kylian Bardini, Développeur Full Stack Junior et
 UX/UI Designer basé à Longwy.
 <br>
 <br>
@@ -33,7 +33,7 @@ UX/UI Designer basé à Longwy.
 <br>
 
 <a href="www.kylian-bardini.fr"><img align="left" alt="logo" width="128px" src="https://kylian-bardini.fr/assets/img/mns_logo.png" /></a>
-Actuellement à la recherche d'une alternance sur Metz pour un BAC+3 Bachelor Développeur Fullstack.
+Actuellement en BAC+3 Bachelor Développeur Full Stack.
 
 
 <a href="https://kylian-bardini.fr/assets/cv/CV_BARDINI_KYLIAN.pdf">
