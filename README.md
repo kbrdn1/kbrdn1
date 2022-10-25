@@ -36,7 +36,7 @@ UX/UI Designer basé à Longwy.
 Actuellement en BAC+3 Bachelor Développeur Full Stack.
 
 
-<a href="https://kylian-bardini.fr/assets/cv/CV_BARDINI_KYLIAN.pdf">
+<a href="https://kylian-bardini.fr/assets/files/CV_BARDINI_KYLIAN.pdf">
 <img align="center" alt="CV" src="https://img.shields.io/badge/-Voir mon CV-5100ff"/></a>
 <a href="https://www.linkedin.com//in/kylian-bardini-aa0528234/">
 <img align="center" src="https://img.shields.io/badge/-LinkedIn-%233781da" alt="LinkedIn"/></a>
