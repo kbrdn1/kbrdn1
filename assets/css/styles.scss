@@ -1509,10 +1509,13 @@ header {
       padding: 1rem;
       h5 {
         font-size: 1rem;
+        font-family: $f-regular;
         color: $primary;
       }
 
       h4 {
+        color: white;
+        font-family: $f-regular;
         font-size: 2rem;
       }
     }
@@ -1533,6 +1536,7 @@ header {
       padding-top: 0;
 
       p {
+        font-family: $f-regular;
         font-size: 1.2rem;
         color: rgba(255, 255, 255, 0.75);
       }
@@ -1541,6 +1545,7 @@ header {
         margin: 1rem 0;
         font-size: 1.3rem;
         color: $primary;
+        font-family: $f-regular;
       }
 
       .modal_list {
@@ -1549,10 +1554,16 @@ header {
         font-size: 1.1rem;
         display: flex;
         flex-wrap: wrap;
+
         .modal_item {
+          color: white;
           margin: 1rem 0;
+          font-family: $f-regular;
           width: 50%;
         }
+      }
+      .btn .btn-content p {
+        color: white;
       }
     }
   }
@@ -1631,6 +1642,7 @@ header {
           margin-bottom: 0.5rem;
           color: #626262;
           font-weight: 500;
+          transition: all 0.4s $elastic;
         }
 
         input,

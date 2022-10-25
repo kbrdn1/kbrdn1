@@ -1181,9 +1181,12 @@ header .header_content .header_social .social_link:hover {
 }
 .projects_modals-bg .projects_modal .modal_title h5 {
   font-size: 1rem;
+  font-family: "GT Walsheim Pro Regular", sans-serif;
   color: #f7931e;
 }
 .projects_modals-bg .projects_modal .modal_title h4 {
+  color: white;
+  font-family: "GT Walsheim Pro Regular", sans-serif;
   font-size: 2rem;
 }
 .projects_modals-bg .projects_modal .pager {
@@ -1202,6 +1205,7 @@ header .header_content .header_social .social_link:hover {
   padding-top: 0;
 }
 .projects_modals-bg .projects_modal .modal_content p {
+  font-family: "GT Walsheim Pro Regular", sans-serif;
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.75);
 }
@@ -1209,6 +1213,7 @@ header .header_content .header_social .social_link:hover {
   margin: 1rem 0;
   font-size: 1.3rem;
   color: #f7931e;
+  font-family: "GT Walsheim Pro Regular", sans-serif;
 }
 .projects_modals-bg .projects_modal .modal_content .modal_list {
   padding-left: 2rem;
@@ -1218,8 +1223,13 @@ header .header_content .header_social .social_link:hover {
   flex-wrap: wrap;
 }
 .projects_modals-bg .projects_modal .modal_content .modal_list .modal_item {
+  color: white;
   margin: 1rem 0;
+  font-family: "GT Walsheim Pro Regular", sans-serif;
   width: 50%;
+}
+.projects_modals-bg .projects_modal .modal_content .btn .btn-content p {
+  color: white;
 }
 
 /*========== CONTACT ==========*/
@@ -1285,6 +1295,7 @@ header .header_content .header_social .social_link:hover {
   margin-bottom: 0.5rem;
   color: #626262;
   font-weight: 500;
+  transition: all 0.4s cubic-bezier(0.2, 0.885, 0.32, 1.275);
 }
 .contact .contact_content .contact_form form input,
 .contact .contact_content .contact_form form textarea {
