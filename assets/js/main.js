@@ -176,6 +176,21 @@ $(document).ready(function () {
     }
   }
 
+  //input, textarea on focus
+  $("input, textarea").focus(function () {
+    $(this).addClass("focus");
+    $("label[for=" + this.id + "]").removeClass("label-hide");
+  });
+
+  //input unfocus
+    $("input, textarea").blur(function () {
+    $(this).removeClass("focus");
+
+    if ($(this).val() !== "") {
+      $("label[for=" + this.id + "]").addClass("label-hide");
+    }
+    });
+
   //loader svg animation
   $(window).on("load", function () {
     var width = 100, // width of a progress bar in percentage

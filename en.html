@@ -758,13 +758,19 @@
                         <h4>Contact form</h4>
                     </div>
                     <form id="contact-form">
-                        <label for="name">Name <span>*</span></label>
-                        <input id="name" name="name" type="text" class="contact_input" placeholder="Name" required>
-                        <label for="email">E-mail <span>*</span></label>
-                        <input id="email" name="email" type="email" class="contact_input" placeholder="E-mail" required>
-                        <label for="message">Message <span>*</span></label>
-                        <textarea id="message" name="message" type="text" class="contact_input" placeholder="Message"
-                            cols="0" rows="3" required></textarea>
+                        <div class="input">
+                            <label for="name">Name <span>*</span></label>
+                            <input id="name" name="name" type="text" class="contact_input" required>
+                        </div>
+                        <div class="input">
+                            <label for="email">E-mail <span>*</span></label>
+                            <input id="email" name="email" type="email" class="contact_input" required>
+                        </div>
+                        <div class="input">
+                            <label for="message">Message <span>*</span></label>
+                            <textarea id="message" name="message" type="text" class="contact_input"
+                                      cols="0" rows="3" required></textarea>
+                        </div>
                         <div class="send">
                             <button type="submit" class="btn">
                                 <div class="btn-content">

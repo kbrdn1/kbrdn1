@@ -1613,21 +1613,47 @@ header {
         display: flex;
         flex-direction: column;
 
+        .input {
+          position: relative;
+          border-radius: 0.7rem;
+          border: none;
+          padding: 1rem;
+          margin-bottom: 1rem;
+          background-color: rgba(255, 255, 255, 0.9);
+        }
+
         label {
+          position: absolute;
           font-family: $f-regular;
           font-size: 1.1rem;
           margin-bottom: 0.5rem;
+          color: #626262;
+          font-weight: 500;
         }
 
         input,
         textarea {
-          padding: 1rem;
+          width: 100%;
           border-radius: 0.7rem;
           font-size: 1.2rem;
           border: none;
-          margin-bottom: 1rem;
           font-family: $f-regular;
-          background-color: rgba(255, 255, 255, 0.9);
+          background-color: transparent;
+          transition: all .4s $elastic;
+        }
+
+        textarea {
+          padding: 1rem;
+          margin-bottom: 1rem;
+          background-color: transparent;
+        }
+        .label-hide {
+          display: none;
+        }
+        .focus {
+          margin-top: 1rem;
+          outline: none;
+          padding: 1rem;
         }
 
         .btn {
