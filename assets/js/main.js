@@ -109,6 +109,7 @@ $(document).ready(function () {
 
       if (id == "about" || id == "skills" || id == "projects") {
         if (scroll > top && scroll < bottom) {
+          onDisplaySection(id)
           $(".nav_indicator").css("width", "20px");
           var posX =
             nav.offset().left -
@@ -119,6 +120,7 @@ $(document).ready(function () {
         }
       } else {
         if (scroll > top && scroll < bottom) {
+          onDisplaySection(id)
           $(".nav_indicator").css("width", 0);
         }
       }
@@ -180,11 +182,13 @@ $(document).ready(function () {
   $("input, textarea").focus(function () {
     $(this).addClass("focus");
     $("label[for=" + this.id + "]").removeClass("label-hide");
+    $("label[for=" + this.id + "]").css("font-size", ".9rem");
   });
 
-  //input unfocus
+  //input, textarea blur
     $("input, textarea").blur(function () {
     $(this).removeClass("focus");
+      $("label[for=" + this.id + "]").css("font-size", "unset");
 
     if ($(this).val() !== "") {
       $("label[for=" + this.id + "]").addClass("label-hide");
@@ -208,6 +212,7 @@ $(document).ready(function () {
     // When Page is loaded completely, remove the loader
     setTimeout(function () {
       $(".loader").fadeOut(500);
+      onLoadDocument()
     }, time);
   });
 
