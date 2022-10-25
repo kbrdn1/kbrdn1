@@ -100,6 +100,10 @@ ul {
   opacity: 1;
 }
 
+.black-part {
+  background-color: #000000;
+}
+
 .section {
   padding: 10rem 10%;
 }

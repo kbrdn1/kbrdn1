@@ -109,6 +109,7 @@ $(document).ready(function () {
 
       if (id == "about" || id == "skills" || id == "projects") {
         if (scroll > top && scroll < bottom) {
+          onDisplaySection(id)
           $(".nav_indicator").css("width", "20px");
           var posX =
             nav.offset().left -
@@ -119,6 +120,7 @@ $(document).ready(function () {
         }
       } else {
         if (scroll > top && scroll < bottom) {
+          onDisplaySection(id)
           $(".nav_indicator").css("width", 0);
         }
       }
@@ -208,6 +210,7 @@ $(document).ready(function () {
     // When Page is loaded completely, remove the loader
     setTimeout(function () {
       $(".loader").fadeOut(500);
+      onLoadDocument()
     }, time);
   });
 
