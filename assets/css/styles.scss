@@ -1462,17 +1462,24 @@ header {
       border-bottom-left-radius: 2rem;
       cursor: pointer;
       z-index: 1;
+      display: flex;
+      align-items: center;
       background-color: rgb(255, 255, 255);
       transition: all 0.4s $elastic;
 
       &:hover {
         background-color: rgb(255, 0, 0);
+        padding: .3rem .5rem;
+        border-radius: 50rem;
+        top: .5rem;
+        right: 1rem;
         transform: scale(1.1);
-        border: 2px solid gray;
+          & img {
+            height: 1rem;
+          }
       }
 
       img {
-        background-blend-mode: difference;
         height: 2rem;
 
         transition: all 0.6s $elastic;
