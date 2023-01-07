@@ -14,7 +14,7 @@
 </p>
 <p align="left">
 Bonjour, je suis Kylian Bardini, Développeur Full Stack Junior et
-UX/UI Designer basé à Longwy.
+UX/UI Designer basé à Metz.
 <br>
 <br>
 <p align="center">
