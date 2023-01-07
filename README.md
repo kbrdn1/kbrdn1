@@ -13,8 +13,7 @@
 <img src="https://img.shields.io/badge/-Twitter-00a6ff" alt="Twiter"/></a>
 </p>
 <p align="left">
-Bonjour, je suis Kylian Bardini, Développeur Full Stack Junior et
-UX/UI Designer basé à Metz.
+Bonjour, je suis Kylian Bardini, Développeur Full Stack Junior basé à Metz.
 <br>
 <br>
 <p align="center">
