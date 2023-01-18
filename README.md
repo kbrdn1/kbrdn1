@@ -32,7 +32,7 @@ Bonjour, je suis Kylian Bardini, Développeur Full Stack Junior basé à Metz.
 <br>
 
 <a href="www.kylian-bardini.fr"><img align="left" alt="logo" width="128px" src="https://kylian-bardini.fr/assets/img/mns_logo.png" /></a>
-Actuellement en BAC+3 Bachelor Développeur Full Stack.
+Actuellement en BAC+3 Bachelor Développeur Full Stack à Metz.
 
 
 <a href="https://kylian-bardini.fr/assets/files/CV_BARDINI_KYLIAN.pdf">
