@@ -6,13 +6,13 @@
 </a>
                                                                                                                      
 <p align="center">
-<img src="https://img.shields.io/badge/-Website-5100ff" alt="Website"/></a>
+<img src="https://img.shields.io/badge/-Website-8313F1" alt="Website"/></a>
 <a href="https://www.linkedin.com//in/kylian-bardini-aa0528234/">
-<img src="https://img.shields.io/badge/-LinkedIn-%233781da" alt="LinkedIn"/></a>
+<img src="https://img.shields.io/badge/-LinkedIn-8313F1" alt="LinkedIn"/></a>
 <a href="https://twitter.com/kbrdn1">
-<img src="https://img.shields.io/badge/-Twitter-5100ff" alt="Twiter"/></a>
+<img src="https://img.shields.io/badge/-Twitter-8313F1" alt="Twiter"/></a>
 <a href="https://kylian-bardini.fr/assets/files/CV_BARDINI_KYLIAN.pdf">
-<img alt="CV" src="https://img.shields.io/badge/-Voir mon CV-5100ff"/></a>
+<img alt="CV" src="https://img.shields.io/badge/-CV-8313F1"/></a>
 </p>
 
 <p align="center">
