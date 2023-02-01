@@ -16,5 +16,5 @@
 </p>
 
 <p align="center">
-<a href="www.kylian-bardini.fr"><img align="center" alt="logo" width="100px" src="https://kylian-bardini.fr/assets/img/mns_logo.png" /></a>
+<a href="https://www.metz-numeric-school.fr/fr"><img align="center" alt="logo" width="100px" src="https://kylian-bardini.fr/assets/img/mns_logo.png" /></a>
 </p>
