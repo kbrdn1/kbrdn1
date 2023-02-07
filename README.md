@@ -1,6 +1,8 @@
 
 <a href="https://www.kylian-bardini.fr/en">
   <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kbrdn1/kbrdn1/main/Github Banner.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kbrdn1/kbrdn1/main/Github White.png" />
     <img alt="Kylian Bardini | Developer Full Stack Junior" src="https://raw.githubusercontent.com/kbrdn1/kbrdn1/main/Github Banner.png" width="100%" />
   </picture>
 </a>
