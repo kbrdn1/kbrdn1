@@ -8,11 +8,11 @@
                                                                                                                      
 <p align="center">
 <a href="https://kbrdn.dev">
-<img src="https://img.shields.io/badge/-Website-FF8800" alt="Website"/></a>
+<img src="https://img.shields.io/badge/-Website-0075FF" alt="Website"/></a>
 <a href="https://www.linkedin.com//in/kylian-bardini-aa0528234/">
 <img src="https://img.shields.io/badge/-LinkedIn-2B2B2B" alt="LinkedIn"/></a>
 <a href="https://twitter.com/kbrdn1">
-<img src="https://img.shields.io/badge/-Twitter-FF8800" alt="Twiter"/></a>
+<img src="https://img.shields.io/badge/-Twitter-0075FF" alt="Twiter"/></a>
 <a href="https://kbrdn.dev/resume">
 <img alt="Resume" src="https://img.shields.io/badge/-CV-2B2B2B"/></a>
 </p>
