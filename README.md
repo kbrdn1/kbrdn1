@@ -10,9 +10,9 @@
 <a href="https://kbrdn.dev">
 <img src="https://img.shields.io/badge/-Website-C6A0F6" alt="Website"/></a>
 <a href="https://www.linkedin.com//in/kylian-bardini-aa0528234/">
-<img src="https://img.shields.io/badge/-LinkedIn-2B2B2B" alt="LinkedIn"/></a>
+<img src="https://img.shields.io/badge/-LinkedIn-1E2030" alt="LinkedIn"/></a>
 <a href="https://x.com/kbrdn1">
 <img src="https://img.shields.io/badge/-X%20Twitter-C6A0F6" alt="Twiter"/></a>
 <a href="https://kbrdn.dev/resume">
-<img alt="Resume" src="https://img.shields.io/badge/-CV-2B2B2B"/></a>
+<img alt="Resume" src="https://img.shields.io/badge/-CV-1E2030"/></a>
 </p>
