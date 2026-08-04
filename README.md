@@ -17,7 +17,7 @@
 <img alt="CV" src="https://img.shields.io/badge/-CV-1A1A1A"/></a>
 </p>
 
-<a href="https://github.com/kbrdn1/gwm-cli">
+<a href="https://gwm.kbrdn.dev">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kbrdn1/kbrdn1/main/gwm-slim.png">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kbrdn1/kbrdn1/main/gwm-slim-light.png">
