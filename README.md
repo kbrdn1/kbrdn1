@@ -2,7 +2,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kbrdn1/kbrdn1/main/banner.png">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kbrdn1/kbrdn1/main/banner-light.png">
-    <img alt="Kylian Bardini — Web Developer Engineer" src="https://raw.githubusercontent.com/kbrdn1/kbrdn1/main/banner.png" width="100%" />
+    <img alt="Kylian Bardini, Web Developer Engineer" src="https://raw.githubusercontent.com/kbrdn1/kbrdn1/main/banner.png" width="100%" />
   </picture>
 </a>
 
@@ -21,6 +21,6 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kbrdn1/kbrdn1/main/gwm-slim.png">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kbrdn1/kbrdn1/main/gwm-slim-light.png">
-    <img alt="gwm — git worktree manager, a Rust CLI + TUI" src="https://raw.githubusercontent.com/kbrdn1/kbrdn1/main/gwm-slim.png" width="100%" />
+    <img alt="gwm: git worktree manager, a Rust CLI + TUI" src="https://raw.githubusercontent.com/kbrdn1/kbrdn1/main/gwm-slim.png" width="100%" />
   </picture>
 </a>
