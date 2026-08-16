@@ -24,3 +24,10 @@
     <img alt="gwm: git worktree manager, a Rust CLI + TUI" src="https://raw.githubusercontent.com/kbrdn1/kbrdn1/main/gwm-slim.png" width="100%" />
   </picture>
 </a>
+<p align="center">
+[![ci](https://github.com/kbrdn1/gwm-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/kbrdn1/gwm-cli/actions/workflows/ci.yml)
+[![release](https://img.shields.io/github/v/release/kbrdn1/gwm-cli?display_name=tag&sort=semver)](https://github.com/kbrdn1/gwm-cli/releases)
+[![license](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](#license)
+[![rust](https://img.shields.io/badge/rust-1.95%2B-orange?logo=rust)](https://www.rust-lang.org/)
+[![docs](https://img.shields.io/badge/docs-gwm.kbrdn.dev-d4825d)](https://gwm.kbrdn.dev/)
+</p>
