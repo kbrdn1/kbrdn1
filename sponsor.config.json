@@ -1,0 +1,16 @@
+{
+  "eyebrow": "Sponsor me on GitHub",
+  "wordmark": "kbrdn1",
+  "wordmarkSize": 104,
+  "tagline": "Open source terminal tools, built in the evenings.",
+  "chips": [
+    "Release pipeline",
+    "Documentation",
+    "Issue queue",
+    "CI across 3 OS"
+  ],
+  "footer": "github.com/sponsors/kbrdn1 · kbrdn.dev",
+  "motif": "<div style='width:560px;display:flex;justify-content:center;'><svg xmlns='http://www.w3.org/2000/svg' width='408' height='300' viewBox='40 20 816 600' fill='none' stroke='#d4825d' role='img' aria-label='heart'><path d='M448 152C356.7 43.2 255 42 237 42C133 42 63 116 63 200C63 360 413 570.6 448 590C483 570.6 833 360 833 200C833 116 763 42 659 42C641 42 539.3 43.2 448 152Z' stroke-width='8'/><path d='M448 152C356.7 43.2 255 42 237 42C133 42 63 116 63 200C63 360 413 570.6 448 590C483 570.6 833 360 833 200C833 116 763 42 659 42C641 42 539.3 43.2 448 152Z' transform='translate(448 239) scale(0.707) translate(-448 -239)' stroke-width='5.6' stroke-opacity='0.34'/></svg></div>",
+  "width": 1600,
+  "height": 600
+}
