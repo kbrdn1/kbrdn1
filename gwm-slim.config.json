@@ -5,7 +5,5 @@
   "title": "Git Worktree Manager",
   "subtitle": "One binary · CLI + TUI in Rust · create from an issue · agent sessions",
   "install": "cargo install gwm-cli",
-  "version": "v1.11.0",
-  "width": 1600,
-  "height": 180
+  "version": "v1.11.0"
 }

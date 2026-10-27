@@ -3,9 +3,13 @@
   "subtitle": "Web Developer Engineer",
   "badge": "Building open source",
   "handle": "kbrdn1",
-  "chips": ["TypeScript", "Laravel", "Nuxt", "Rust", "AWS"],
+  "chips": [
+    "TypeScript",
+    "Laravel",
+    "Nuxt",
+    "Rust",
+    "AWS"
+  ],
   "footerLeft": "kbrdn.dev",
-  "footerRight": "Nancy, France",
-  "width": 1600,
-  "height": 460
+  "footerRight": "Nancy, France"
 }
