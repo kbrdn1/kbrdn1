@@ -1,0 +1,41 @@
+{
+  "eyebrow": "Sponsor me on GitHub",
+  "wordmark": "kbrdn1",
+  "tagline": "Open source terminal tools, built in the evenings.",
+  "chips": [
+    "Release pipeline",
+    "Documentation",
+    "Issue queue",
+    "CI across 3 OS"
+  ],
+  "footer": "github.com/sponsors/kbrdn1 · kbrdn.dev",
+  "footerAction": null,
+  "featuresLabel": "What it funds",
+  "facts": [
+    {
+      "icon": "heart",
+      "label": "Sponsors",
+      "value": "github.com/sponsors/kbrdn1"
+    },
+    {
+      "icon": "link",
+      "label": "Site",
+      "value": "kbrdn.dev"
+    },
+    {
+      "icon": "user",
+      "label": "Maintainer",
+      "value": "kbrdn1",
+      "person": true
+    }
+  ],
+  "image": "sponsor-illustration.webp",
+  "imageSize": "contain",
+  "buttons": [
+    {
+      "label": "Sponsor",
+      "icon": "heart",
+      "filled": true
+    }
+  ]
+}
